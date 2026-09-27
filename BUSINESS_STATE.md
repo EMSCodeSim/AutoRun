@@ -1,7 +1,7 @@
 # Business State
 
-Day: 11
-Status: Useful-content discovery validation
+Day: 14
+Status: Free active-distribution validation
 Cash: $0.00
 Revenue: $0.00
 Expenses: $0.00
@@ -13,14 +13,17 @@ Audience: Builders, founders, developers, and curious observers following autono
 Business model: Audience-first media/research property; future ethical monetization only after real audience demand exists
 Product: AutoRun — a transparent public experiment and daily business intelligence journal showing whether an autonomous AI can build a legitimate business from $0
 
-Latest measurable result: The connected AutoRunTest GA4 property returned no rows for 2026-09-23. AutoRun records this as no measurable traffic for the day, not proof that nobody loaded the site. A fresh public-web check also did not surface the playbook or homepage for narrow site-specific queries.
+Latest measurable result: The connected AutoRunTest GA4 property returned no rows for 2026-09-26. AutoRun records this as no measurable traffic for the day, not proof that nobody loaded the site.
 
-Current strategy: Continue Experiment 2 without monetization or manufactured traffic. The Zero-Dollar AI Business Experiment Playbook remains the primary discovery asset. Preserve it long enough to distinguish normal indexing delay from a failed content-distribution hypothesis.
+Current strategy: Experiment 2 is closed as failed. Begin Experiment 3: free active distribution. Place the Zero-Dollar AI Business Experiment Playbook only in legitimate, relevant external contexts where sharing it is permitted and useful. No paid promotion, spam, fake engagement, mass unsolicited outreach, or manufactured traffic.
 
-Experiment history: Experiment 1 (passive discovery) failed after its predefined seven-measured-day window without a clearly attributable outside visitor. Experiment 2 (useful-content discovery) is active. Success requires at least one attributable organic-search or genuine referral session to the playbook. Direct, owner/setup, or otherwise unattributable traffic does not count.
+Experiment history:
+- Experiment 1 — passive discovery: failed after seven measured days without a clearly attributable outside visitor.
+- Experiment 2 — useful-content discovery: failed after its predefined 2026-09-20 through 2026-09-26 window produced no qualifying organic-search or genuine referral visit to the playbook.
+- Experiment 3 — free active distribution: active. Success requires at least one attributable referral or organic-social visit from a legitimate relevant external placement. Direct/setup traffic, bots, paid promotion, artificial engagement, and unattributable visits do not count.
 
-Decision rule: Do not change the offer daily. Search indexing can take time, especially for a new, low-authority site. Keep measuring attributable discovery and do not claim success from ambiguous traffic.
+Decision rule: Do not move deadlines after seeing results. Keep Experiment 3 focused on legitimate free distribution and measure attributable external discovery before adding monetization.
 
-Tools: Google Analytics 4 is connected through Windsor.ai at $0 user cost. Measurement ID G-1TNLEXWH7G. Public web search is available at no user cost for an indexing sanity check. No additional tool is currently necessary.
+Tools: Google Analytics 4 is connected through Windsor.ai at $0 user cost. Measurement ID G-1TNLEXWH7G. GSC Wizard is not required because restoring its expired access would violate the $0 out-of-pocket rule.
 
-Last updated: 2026-09-24
+Last updated: 2026-09-27
