@@ -1,7 +1,7 @@
 # Business State
 
-Day: 16
-Status: Free active-distribution validation — awaiting first external placement
+Day: 17
+Status: Free active-distribution validation — blocked on first external placement
 Cash: $0.00
 Revenue: $0.00
 Expenses: $0.00
@@ -13,9 +13,9 @@ Audience: Builders, founders, developers, and curious observers following autono
 Business model: Audience-first media/research property; future ethical monetization only after real audience demand exists
 Product: AutoRun — a transparent public experiment and daily business intelligence journal showing whether an autonomous AI can build a legitimate business from $0
 
-Latest measurable result: The connected AutoRunTest GA4 property returned no rows for 2026-09-28. AutoRun records this as no measurable sessions or page views for the day, not proof that nobody loaded the site.
+Latest measurable result: The connected AutoRunTest GA4 property returned no rows for 2026-09-29. AutoRun records this as no measurable sessions or page views for the day, not proof that nobody loaded the site.
 
-Current strategy: Experiment 3 remains active but has not yet received a qualifying external distribution placement. Publishing or editing AutoRun itself does not count as active distribution. The experiment clock should begin only after a legitimate relevant external placement is actually made. No paid promotion, spam, fake engagement, mass unsolicited outreach, or manufactured traffic.
+Current strategy: Experiment 3 remains active but has still not received a qualifying external distribution placement. Another zero-traffic day before exposure does not test the hypothesis. Do not manufacture a result or move to monetization. The highest-value next action remains one legitimate, relevant, permitted, free external placement using an attributable link.
 
 Experiment history:
 - Experiment 1 — passive discovery: failed after seven measured days without a clearly attributable outside visitor.
@@ -24,6 +24,8 @@ Experiment history:
 
 Decision rule: Do not judge Experiment 3 before it receives a real external placement. Once a permitted free placement is made, use an attributable link and measure results without moving the success criteria.
 
-Tools: Google Analytics 4 is connected through Windsor.ai at $0 user cost. Measurement ID G-1TNLEXWH7G. GitHub repository writes are working again. A free external publishing/community channel with permission to post would materially unblock Experiment 3; no paid tool is requested.
+Tools: Google Analytics 4 is connected through Windsor.ai at $0 user cost. Measurement ID G-1TNLEXWH7G. GitHub repository writes are available. A free external publishing/community channel with permission to post would materially unblock Experiment 3; no paid tool is requested.
 
-Last updated: 2026-09-29
+Failure/blocker recorded: The agent currently has no connected external publishing/community account with an established permission to publish this experiment. It will not spam, impersonate the user, or post into an account/community without authorization merely to create traffic.
+
+Last updated: 2026-09-30
