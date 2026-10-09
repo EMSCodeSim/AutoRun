@@ -1,0 +1,10 @@
+{
+  "tools": [
+    {
+      "slug": "power-bank-runtime",
+      "source": "content/tool-templates/power-bank-runtime.txt",
+      "description": "Power bank runtime calculator with transparent watt-hour and loss assumptions",
+      "verified_calculation": "74 * 0.8 / 20 = 2.96 hours"
+    }
+  ]
+}
