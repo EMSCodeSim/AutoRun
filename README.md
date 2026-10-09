@@ -52,3 +52,24 @@ Search Console is free. A paid third-party Search Console connector is **not nee
 **Monthly SEO decision rule:** prioritize pages receiving genuine impressions but low click-through rates, queries where existing guides can answer a clearer question, and useful companion tools. Do not mass-generate dozens of thin pages. Record the measurement period and actual observed numbers when changing strategy.
 
 When a verified custom domain is introduced, update the canonical URLs, sitemap and robots file to the new host together and submit the new property/sitemap.
+
+
+## Automatic illustrated long-form publishing (October 2026)
+
+The site publishes one **pre-written, structured, source-linked guide** per Wednesday using `.github/workflows/publish-weekly.yml`. The queue is in `content/publishing-queue.json` and the stdlib-only generator is `scripts/publish_queue.py`. A new article includes original inline SVG explanatory artwork, clear subsections, linked primary sources, no false hands-on claims, and a machine-readable Article schema. The publisher also refreshes `latest.html` and the XML sitemap, runs `scripts/site_audit.py`, and commits only actual changes. Netlify deploys from GitHub main.
+
+The first article was published with this release. Five additional substantive guides are ready for release, one each week. **This is a finite queue**: when exhausted, the publisher explicitly does not fabricate articles or fake updated dates. To keep publication going indefinitely, a contributor or connected AI drafting service must add additional credible article entries to the queue after checking source quality. The optional AI draft workflow already in this repository prepares unpublished suggestions, but requires an explicitly approved API provider; it cannot automatically guarantee accuracy.
+
+### Editing workflow
+
+1. Add one new complete article object to `content/publishing-queue.json` with unique slug, verified primary-source references, at least five sections and 325 words in body sections.
+2. Confirm no invented personal experience, testing, pricing or manufacturer claims.
+3. On Wednesday, the free GitHub Actions job publishes at most one unpublished queue entry. The workflow can also be started manually in GitHub Actions.
+4. Monitor the weekly QA workflow. If sources materially change, update existing articles and note the real changes rather than silently changing the publication date.
+
+### Operating limits
+
+- The system **does not** automatically research external changes, verify every source, or renew an exhausted queue.
+- A Google Search Console account remains unverified until site ownership is completed.
+- Advertising is not active, and there is no guarantee of search traffic or AdSense approval.
+- GitHub Actions scheduled workflows can be delayed and may be disabled after 60 days of repository inactivity on public repositories. Confirm the workflow actually runs in Actions.
