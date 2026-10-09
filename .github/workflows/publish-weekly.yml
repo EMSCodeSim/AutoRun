@@ -1,0 +1,32 @@
+name: Practical Pick weekly publishing
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 13 * * 3'
+permissions:
+  contents: write
+concurrency:
+  group: practical-pick-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Release at most one prepared guide with original artwork
+        run: python3 scripts/publish_queue.py
+      - name: Validate all site pages and sitemap
+        run: python3 scripts/site_audit.py
+      - name: Publish changes through Git
+        run: |
+          git add articles/ latest.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No substantive changes to publish."
+            exit 0
+          fi
+          git -c user.name="Practical Pick Publisher" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Publish prepared Practical Pick guide and artwork"
+          git push origin HEAD:main
