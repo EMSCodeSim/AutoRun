@@ -18,5 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify editorial automation and calculations
+        run: |
+          python3 -m compileall -q scripts/
+          python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Check page metadata, source links and indexing files
         run: python3 scripts/site_audit.py

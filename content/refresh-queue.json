@@ -1,0 +1,19 @@
+{
+  "revisions": [
+    {
+      "slug": "wifi-slow",
+      "revision": "two-location-diagnosis-v1",
+      "before": "<h2>5. Know when to escalate</h2>",
+      "sections": [
+        {
+          "heading": "Use a repeatable two-location diagnosis",
+          "paragraphs": [
+            "Choose one device and compare the same ordinary task close to the router with that task in the room where you usually experience trouble. Repeat at similar times, avoiding simultaneous large downloads or software updates. This does not isolate every possible cause, but an improvement near the router is a useful clue that wireless coverage or interference could be involved.",
+            "If two devices are affected only in one distant room, investigate router placement and physical obstacles before buying extra network hardware. If both devices are similarly slow near the router, check your internet provider's status and any device-specific error messages before changing Wi-Fi settings.",
+            "Write down the room, device, approximate time and symptoms. Read the router positioning guide for background, but follow the router manufacturer's instructions for any changes. Do not claim a diagnosis from one speed test alone."
+          ]
+        }
+      ]
+    }
+  ]
+}
