@@ -76,7 +76,7 @@ if sitemap_file.exists():
     for page in html_files:
         text_value = page.read_text(encoding="utf-8")
         expected = site_url + ("" if page.name == "index.html" and page.parent == BASE else page.relative_to(BASE).as_posix())
-        matches = re.findall(r'<link\\s+rel="canonical"\\s+href="([^"]+)"', text_value)
+        matches = re.findall(r'<link\s+rel="canonical"\s+href="([^"]+)"', text_value)
         if matches != [expected]:
             errors.append(f"{page.relative_to(BASE)}: missing or incorrect canonical URL")
 robots = BASE / "robots.txt"
