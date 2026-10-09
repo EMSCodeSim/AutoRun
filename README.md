@@ -1,39 +1,39 @@
-# Practical Pick
+# Practical Pick — free home technology help
 
-**Practical Pick** is an independent practical-buying-guide website. This repository formerly hosted **AutoRun — AI Business From $0**, which the owner explicitly chose to replace. The previous content may remain in Git history; the deployed root site now serves Practical Pick.
+Public website: https://autoruntest.netlify.app
 
-## Current state
+This is a focused, advertiser-free site with free troubleshooting checklists, one working energy-cost calculator, and practical buying advice. The repository replaces the old AutoRun experiment by the owner's request.
 
-- Responsive standalone HTML/CSS website at repository root.
-- Three original introductory guides in `articles/`.
-- AI drafting tool in `scripts/generate_draft.py` (never directly publishes).
-- Weekly GitHub Actions workflow at `.github/workflows/practical-pick-draft.yml`.
-- No active AdSense application, ad unit, revenue claim, or affiliate account.
-- No AI API credentials committed to source control.
+## SEO and reader value
 
-## Deployment
+- Core topic: everyday home technology, electrical energy cost estimates, Wi-Fi troubleshooting, USB-C compatibility.
+- Primary reader benefit: solve a problem without purchasing anything.
+- Supporting articles link to interactive tools rather than thin keyword variants.
+- Site includes an XML sitemap, page-specific titles/descriptions, About and Privacy pages.
+- No claim is made about actual search volume or traffic until Search Console data confirms it.
+- Domain is currently the existing Netlify subdomain; only change canonical/sitemap host when a custom domain is attached.
 
-The existing Netlify project may already deploy the repository root. Keep its publish directory as the repository root (or `.`) and build command blank, because this is static HTML. Confirm the existing Netlify site's Git branch and deploy configuration before assuming the new version is publicly live.
+## Automation
 
-## Optional AI drafting
+1. **Weekly QA:** `.github/workflows/site-qa.yml` runs a local-link, metadata and site-file audit on commits and Mondays, and produces a review queue. It does not fabricate article update dates or claim that outbound sources were checked.
+2. **AI drafts:** `.github/workflows/practical-pick-draft.yml` can propose one draft per week **only after** a free/approved OpenAI-compatible model and API key are configured. AI drafts are not published automatically. Every factual claim and primary source should be confirmed before publishing.
+3. **Publishing:** merge genuinely reviewed pages into main. Static Netlify deployment then updates the site through its existing Git integration.
 
-The draft workflow runs Tuesdays at 14:15 UTC or manually. Without credentials, it does nothing and costs nothing. To enable it, only after independently verifying that the provider has a genuinely free option without charges or auto-converting billing, configure GitHub Actions:
+## Organic growth plan
 
-- Repository secret `PRACTICAL_PICK_AI_API_KEY`
-- Repository variable `PRACTICAL_PICK_AI_BASE_URL` (HTTPS OpenAI-compatible API base)
-- Repository variable `PRACTICAL_PICK_AI_MODEL`
+- Publish detailed answers to long-tail troubleshooting questions and add helpful tools for the same audience.
+- Add relevant official manufacturer/agency sources and fix gaps before seeking rankings.
+- Connect Google Search Console, inspect actual impressions/queries monthly and improve pages based on user intent.
+- Do not post dozens of low-value AI pages or fabricated hands-on reviews.
+- Gradually expand one adjacent cluster at a time after measuring real results.
 
-The generator cannot browse live sources, so its output is unverified. It creates a draft proposal pull request, **not** a public article. Verify the draft against current authoritative sources, edit, and intentionally publish once ready. The weekly job can be disabled in the Actions interface.
+## Advertising later
 
-## AdSense launch requirements
+Google AdSense is not active. Before applying, confirm original content depth, working publisher contact channel, privacy disclosures, any applicable cookie consent solution, site ownership, and Google publisher policies. Add ads.txt and ad code **only** from a real approved AdSense account. No secrets or paid APIs in this repository.
 
-Before applying for ads, provide a real contact method, publisher information, privacy/cookie policy appropriate for the jurisdictions served, any legally required consent management, stable domain and canonical/sitemap configuration, original valuable articles, and accurate ad/affiliate disclosure. Add AdSense code and ads.txt only from an approved publisher account. Never invent publisher IDs.
+## Energy math
 
-## Editorial standards
+`kWh = watts / 1000 * hours_per_day * days`
+`estimated_cost = kWh * dollars_per_kWh`
 
-- No fake testing, ratings, reviews or endorsements.
-- Clear separation of documented specifications and experience.
-- Link relevant primary sources where claims warrant verification.
-- No scaled publication of thin AI-generated pages.
-- Never fabricate traffic, earnings, costs or affiliate commissions.
-- Do not activate paid APIs or usage-based billing without explicit approval.
+Checks and reader disclosures distinguish a simple energy-only estimate from full utility bills and fluctuating actual loads.
