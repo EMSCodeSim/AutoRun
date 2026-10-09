@@ -3,7 +3,7 @@
 import json
 import re
 from pathlib import Path
-from scripts.publish_queue import sitemap
+from publish_queue import sitemap
 ROOT = Path(__file__).resolve().parents[1]
 def main():
     queue = json.loads((ROOT/"content/tool-release-queue.json").read_text())["tools"]
