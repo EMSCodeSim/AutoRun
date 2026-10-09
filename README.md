@@ -37,3 +37,18 @@ Google AdSense is not active. Before applying, confirm original content depth, w
 `estimated_cost = kWh * dollars_per_kWh`
 
 Checks and reader disclosures distinguish a simple energy-only estimate from full utility bills and fluctuating actual loads.
+
+
+## Free Google Search Console setup (owner verification required)
+
+Search Console is free. A paid third-party Search Console connector is **not needed** and is currently unavailable for this project. The site now advertises its sitemap in `robots.txt`, and every public page has a self-referencing canonical link.
+
+1. Visit https://search.google.com/search-console and sign in to the Google account that will own this site.
+2. Add a **URL prefix** property with the exact URL `https://autoruntest.netlify.app/`. This is easier than DNS verification while using a Netlify subdomain.
+3. Choose the **HTML file verification** method and download Google's generated verification file. Add that exact file to the repository root through a GitHub PR (or send its filename and contents to a maintainer to publish). Click **Verify** in Search Console only after it is live. Do not invent verification tokens.
+4. In Search Console → Sitemaps, submit `https://autoruntest.netlify.app/sitemap.xml`.
+5. In the Performance → Search results report, monitor clicks, impressions, pages and queries. Newly added sites may have little or no data initially. Avoid judging topic demand until sufficient real impressions arrive.
+
+**Monthly SEO decision rule:** prioritize pages receiving genuine impressions but low click-through rates, queries where existing guides can answer a clearer question, and useful companion tools. Do not mass-generate dozens of thin pages. Record the measurement period and actual observed numbers when changing strategy.
+
+When a verified custom domain is introduced, update the canonical URLs, sitemap and robots file to the new host together and submit the new property/sitemap.

@@ -6,6 +6,7 @@ import re
 import sys
 from urllib.parse import urlsplit, unquote
 from datetime import date
+from xml.etree import ElementTree as ET
 
 BASE = Path(__file__).resolve().parents[1]
 EXCLUDE = {".git", ".github", "drafts", "scripts", "__pycache__"}
@@ -53,6 +54,35 @@ for f in BASE.rglob("*.html"):
 for name in ("index.html", "robots.txt", "sitemap.xml", "privacy.html", "about.html", "tools/electricity-cost.js"):
     if not (BASE / name).exists():
         errors.append("missing required file " + name)
+
+# Search discovery: every public page must be in sitemap and declare itself canonical.
+site_url = "https://autoruntest.netlify.app/"
+sitemap_file = BASE / "sitemap.xml"
+if sitemap_file.exists():
+    try:
+        root = ET.parse(sitemap_file).getroot()
+        sitemap_urls = {el.text.strip() for el in root.findall(".//{*}loc") if el.text}
+    except (ET.ParseError, OSError) as exc:
+        errors.append(f"sitemap.xml cannot be parsed: {exc}")
+        sitemap_urls = set()
+    expected_urls = {
+        site_url + ("" if f.name == "index.html" and f.parent == BASE else f.relative_to(BASE).as_posix())
+        for f in html_files
+    }
+    for url in sorted(expected_urls - sitemap_urls):
+        errors.append(f"Page missing from sitemap: {url}")
+    for url in sorted(sitemap_urls - expected_urls):
+        errors.append(f"Sitemap URL not found among local pages: {url}")
+    for page in html_files:
+        text_value = page.read_text(encoding="utf-8")
+        expected = site_url + ("" if page.name == "index.html" and page.parent == BASE else page.relative_to(BASE).as_posix())
+        matches = re.findall(r'<link\s+rel="canonical"\s+href="([^"]+)"', text_value)
+        if matches != [expected]:
+            errors.append(f"{page.relative_to(BASE)}: missing or incorrect canonical URL")
+robots = BASE / "robots.txt"
+if robots.exists() and f"Sitemap: {site_url}sitemap.xml" not in robots.read_text(encoding="utf-8"):
+    errors.append("robots.txt does not identify the production sitemap")
+
 # Editorial queue: report existing content for periodic review; dates are not automatically changed.
 print(f"Audited {len(html_files)} HTML pages on {date.today().isoformat()}.")
 print("Review queue (verify claims and outbound sources; no automatic freshness claim):")
