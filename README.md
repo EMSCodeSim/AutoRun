@@ -73,3 +73,19 @@ The first article was published with this release. Five additional substantive g
 - A Google Search Console account remains unverified until site ownership is completed.
 - Advertising is not active, and there is no guarantee of search traffic or AdSense approval.
 - GitHub Actions scheduled workflows can be delayed and may be disabled after 60 days of repository inactivity on public repositories. Confirm the workflow actually runs in Actions.
+
+## Editorial release cadence — three publishing slots, one refresh, one tool
+
+Schedules are GitHub Actions cron times in UTC and can run later than scheduled:
+
+| Schedule | Workflow | What actually happens |
+| --- | --- | --- |
+| Monday, Wednesday, Friday at 13:37 UTC | `.github/workflows/publish-weekly.yml` | Publish **at most one** previously prepared, source-linked illustrated guide per slot; run static QA first |
+| Sunday at 15:15 UTC | `.github/workflows/refresh-weekly.yml` | Apply **at most one** specific substantive revision from `content/refresh-queue.json`, with a real textual change; otherwise skip |
+| First Tuesday each month at 15:42 UTC | `.github/workflows/tools-monthly.yml` | Publish **at most one** previously built and reviewed tool from `content/tool-release-queue.json` and update links/sitemap |
+
+A prepared illustrated guide uses the queue schema in `content/publishing-queue.json`. Adding a new entry requires factual review, at least five meaningful sections, credible source references and no fabricated test results. All release tasks are gated by `scripts/site_audit.py` before committing. The generator never invents an article when the queue is empty.
+
+**Capacity and limitations:** Five further illustrated guides, one substantive page revision and one runtime calculator are initially available for these schedules. This is NOT enough to sustain three new articles each week or a new tool each month indefinitely. The editor or an approved free AI research service must continue adding high-quality, source-checked queue items. The existing optional AI draft action needs provider credentials and does not automatically supply verified queue entries.
+
+GitHub Actions may disable scheduled workflows for inactivity in public repos, and scheduled runs are not guaranteed to fire at an exact minute. Verify workflow runs, QA results and production deployment after each release. Revisions do not claim source verification unless someone has actually performed it. No AdSense or paid APIs are enabled.
