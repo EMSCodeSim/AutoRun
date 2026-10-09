@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate queued editorial inputs
+        run: |
+          python3 -m compileall -q scripts/
+          python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Publish at most one reviewed prebuilt tool
         run: python3 scripts/publish_tool.py
       - name: Run sitemap and link quality checks
