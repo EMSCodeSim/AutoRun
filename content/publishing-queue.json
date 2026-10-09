@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "description": "Prepared evergreen educational queue; factual claims require periodic rechecking; no claims of hands-on testing",
+  "articles": [
+    {
+      "slug": "router-placement",
+      "title": "Where should you put a Wi-Fi router?",
+      "dek": "A room-by-room guide to improving wireless coverage before spending money on new hardware.",
+      "category": "Wi-Fi",
+      "diagram": "wifi",
+      "updated": "2026-10-09",
+      "sources": [
+        [
+          "Wi-Fi Alliance — Discover Wi-Fi",
+          "https://www.wi-fi.org/discover-wi-fi"
+        ]
+      ],
+      "sections": [
+        [
+          "Start with the actual problem",
+          [
+            "A router's position can make a noticeable difference to coverage, but it cannot fix every slow connection. Before moving equipment, check whether the problem affects every device or only a particular room. Test the same device near the router and again where performance is poor. If the speed and reliability improve nearby, wireless coverage is worth investigating.",
+            "Also check whether the internet provider has reported an outage. A device can be connected to Wi-Fi while its internet connection is unavailable. Fixing Wi-Fi placement will not repair a provider outage."
+          ]
+        ],
+        [
+          "Choose a central, open location",
+          [
+            "For many homes, a reasonably central, elevated position gives the router more opportunity to reach rooms in different directions. Placing it behind a metal cabinet, inside a closet or close to large obstructions can interfere with the path between the router and devices.",
+            "You do not have to put the router in the geometric center of the house at any cost. Consider where people actually need connectivity, where the incoming connection is located, electrical safety and whether its antennas can be positioned according to the manufacturer's instructions."
+          ]
+        ],
+        [
+          "Know what walls and floors change",
+          [
+            "Walls, floors and other building materials can attenuate wireless signals. The impact depends on the material, thickness, frequency band and layout. A signal that crosses multiple dense barriers may be less reliable than one with a clearer path. If you use equipment with multiple bands, experiment with the manufacturer-recommended settings before making broad changes.",
+            "A simple way to compare locations is to use the same device, stand in the same test spots and repeat comparable tasks after each change. Keep notes on room, position and whether the problem improved. That is more informative than relying on a single test result."
+          ]
+        ],
+        [
+          "Compare three low-cost improvements",
+          [
+            "First, move the router out of an enclosure and away from large metal objects if practical. Second, position it where it is less obstructed by furniture and high-traffic household equipment. Third, if your home is larger or has difficult construction, consider wired access points or a properly configured mesh system only after confirming a coverage gap.",
+            "Avoid buying a new router simply because a speed-test score is disappointing. The limiting factor might be your internet plan, local device, an overcrowded channel or the destination service."
+          ]
+        ],
+        [
+          "When placement is not enough",
+          [
+            "If the device is still slow near the router, investigate internet service, hardware condition and network configuration. If the router is far from a room and moving it is impractical, a wired Ethernet connection may be the most predictable option for fixed devices.",
+            "Never factory reset network equipment as a first troubleshooting step. Resetting can erase passwords, network settings and provider-specific configuration. Follow official instructions, and keep a record of symptoms before contacting support."
+          ]
+        ],
+        [
+          "Quick decision checklist",
+          [
+            "Test two devices and two locations. Check for a provider outage. Move the router out of enclosed or obstructed locations. Repeat comparable tests. Only consider buying additional networking hardware if you have evidence of a coverage problem."
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "kwh-vs-kw",
+      "title": "kW vs. kWh: what your electricity bill actually measures",
+      "dek": "Understand power and energy, see the math, and estimate costs with a realistic example.",
+      "category": "Energy",
+      "diagram": "energy",
+      "updated": "2026-10-09",
+      "sources": [
+        [
+          "U.S. Department of Energy — Estimating appliance energy use",
+          "https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use"
+        ]
+      ],
+      "sections": [
+        [
+          "The short answer",
+          [
+            "A kilowatt (kW) describes a rate of power use. A kilowatt-hour (kWh) measures how much energy is used over time. Utility bills commonly include charges based on kilowatt-hours consumed. The distinction matters because two appliances with the same power rating can use very different amounts of energy depending on how long they run."
+          ]
+        ],
+        [
+          "Convert watts into kilowatts",
+          [
+            "Power is often stated in watts. Divide a watt value by 1,000 to express the same power in kilowatts. A 100-watt load is 0.1 kW. A 1,500-watt load is 1.5 kW. The rating on an appliance may describe a maximum or nominal draw, not its continuous measured average.",
+            "If a device cycles on and off, such as a refrigerator or heater, simple nameplate estimates may overstate or understate actual consumption. A compatible energy meter or manufacturer-provided consumption data can make the estimate more useful."
+          ]
+        ],
+        [
+          "Convert power and time into energy",
+          [
+            "Energy in kilowatt-hours is power in kilowatts multiplied by running time in hours. A hypothetical steady 100-watt device run for eight hours would use 0.8 kWh. Over 30 identical days, that would total 24 kWh.",
+            "A device run at twice the power for half the time can consume the same energy if all other factors are equal. That is why wattage alone cannot tell you what a device will cost over a month."
+          ]
+        ],
+        [
+          "Estimate the part of the bill related to energy",
+          [
+            "Multiply estimated kWh by the relevant electricity rate in dollars per kWh. At an example rate of $0.15/kWh, 24 kWh would represent $3.60 in energy charges. Actual bills can also include fixed charges, seasonal rates, taxes, time-of-use pricing, demand charges or other utility-specific adjustments.",
+            "The site's calculator estimates energy cost, not your full utility bill. Use the exact rate and billing period from your utility when possible; avoid treating an arbitrary national average as your household price."
+          ]
+        ],
+        [
+          "Why actual use can differ",
+          [
+            "Heating elements, compressors, electronic power supplies and other systems may change their electricity draw during operation. Standby modes can consume energy, and operating conditions matter. For a more accurate estimate, measure average consumption over a representative period instead of assuming the device draws its maximum wattage constantly."
+          ]
+        ],
+        [
+          "Use the free tool",
+          [
+            "Open the electricity cost calculator on this site and try multiple wattage, hour and rate assumptions. Compare estimates before deciding whether a new device or a change in habits is financially worthwhile."
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "phone-charging-slow",
+      "title": "Why is my phone charging slowly?",
+      "dek": "A practical checklist for checking cables, adapters, heat and charging settings safely.",
+      "category": "Charging",
+      "diagram": "charging",
+      "updated": "2026-10-09",
+      "sources": [
+        [
+          "USB Implementers Forum — USB Power Delivery",
+          "https://www.usb.org/usb-charger-pd"
+        ]
+      ],
+      "sections": [
+        [
+          "Separate normal slowdowns from faults",
+          [
+            "Many devices vary their charging speed throughout a charging session. Charging may slow as the battery approaches full, or when the device is warm. One measurement at an arbitrary battery percentage does not prove that a cable or adapter is defective.",
+            "If a device reports a charging or temperature warning, follow the device manufacturer's instructions before testing anything else. Stop using damaged, swollen, wet or unusually hot charging equipment."
+          ]
+        ],
+        [
+          "Start with the power source",
+          [
+            "A computer USB port, a low-power adapter and a capable USB Power Delivery charger can offer very different charging capability. Check your phone's documented supported charging methods and compare them to the adapter specifications.",
+            "A higher number printed on a charger does not mean the phone will continuously draw that power. The phone, charger, cable and charging conditions all play a role."
+          ]
+        ],
+        [
+          "Check the cable without guessing",
+          [
+            "USB-C describes connector shape, not a guarantee of particular current, transfer speed or charging protocol. Some cables are unsuitable for high-power or specialized uses. Read the printed rating or manufacturer specification rather than assuming all USB-C cables are identical.",
+            "Try a known-good manufacturer-compatible cable if one is available. Do not repair or continue using a cable with exposed conductors, melted insulation or damaged connectors."
+          ]
+        ],
+        [
+          "Consider temperature, apps and settings",
+          [
+            "Charging can be affected by thermal management, wireless charging alignment and device settings. Heavy activities such as gaming or video recording may consume power while the device is charging and make the percentage rise more slowly.",
+            "If supported, check the device's battery health and optimized charging information. Device menus vary, so rely on the manufacturer manual for the exact setting names rather than following a generic sequence of taps."
+          ]
+        ],
+        [
+          "When to seek service",
+          [
+            "Repeated unexpected shutdowns, excessive heat, physical battery damage or persistent charging errors warrant support from the device maker or an authorized service provider. Do not attempt to puncture or dismantle lithium-ion batteries.",
+            "For an ordinary slow-charge complaint, document the adapter, cable, battery level, temperature and approximate charge time before contacting support. Those details help avoid replacing perfectly good accessories."
+          ]
+        ],
+        [
+          "Buying checklist",
+          [
+            "Before buying a new accessory, confirm the phone's supported input, charger output and the cable's verified rating. Compare a known-good setup first. Favor clear technical specifications and reliable return policies over unsupported speed claims."
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "power-bank-sizing",
+      "title": "How large a power bank do you really need?",
+      "dek": "Understand watt-hours, capacity claims, losses and travel considerations before choosing portable charging.",
+      "category": "Charging",
+      "diagram": "battery",
+      "updated": "2026-10-09",
+      "sources": [
+        [
+          "FAA — PackSafe lithium batteries",
+          "https://www.faa.gov/hazmat/packsafe/lithium-batteries"
+        ],
+        [
+          "USB Implementers Forum",
+          "https://www.usb.org/"
+        ]
+      ],
+      "sections": [
+        [
+          "Start with your actual use case",
+          [
+            "A small battery pack that tops up a phone during commuting serves a different purpose from a large pack intended to keep multiple devices operating through a trip. Consider which devices you will charge, whether they need USB-C Power Delivery and how often you will have access to an outlet.",
+            "Do not choose solely by the biggest milliamp-hour number on the package. That single number does not describe output voltage, conversion losses or whether a device can negotiate the power it needs."
+          ]
+        ],
+        [
+          "Understand mAh and Wh",
+          [
+            "Milliamp-hours (mAh) describe electric charge capacity at a stated voltage. Watt-hours (Wh) represent stored energy. To estimate watt-hours from a specified nominal voltage, multiply amp-hours by volts. Because devices use different nominal voltages, two mAh figures cannot always be compared directly.",
+            "For illustration, a 10,000 mAh pack rated at a nominal 3.7 volts corresponds to about 37 Wh of nominal stored energy (10 Ah × 3.7 V). This is not a claim about usable USB output energy."
+          ]
+        ],
+        [
+          "Why you will not receive all the stated energy",
+          [
+            "Voltage conversion, heat, cable and connector losses, internal reserve, device charging circuitry and environmental conditions affect what reaches the connected device. For that reason, advertised capacity is not equivalent to the exact amount that can be delivered to your phone.",
+            "A useful comparison is the manufacturer's declared Wh rating alongside supported USB output ratings, physical size, quality and warranty. Real delivered capacity must be measured under specified conditions."
+          ]
+        ],
+        [
+          "Check output capability separately",
+          [
+            "A battery pack's total capacity and maximum output power answer different questions. Capacity relates to how long it may supply energy; output rating relates to whether it can power or charge a particular device at the desired rate. Check the laptop or phone's requirements, the pack's port ratings and the cable's capability together.",
+            "Multiple devices plugged into one pack may share a total output budget. Look for manufacturer documentation that explains simultaneous charging limits rather than assuming every port reaches its advertised individual maximum."
+          ]
+        ],
+        [
+          "Air travel and safety",
+          [
+            "Airline and aviation rules apply to lithium batteries and power banks, and restrictions depend on their watt-hour ratings and other conditions. Consult the FAA PackSafe rules and your airline before traveling. Do not rely on a generic social-media chart as your sole source.",
+            "Stop using a battery pack that is visibly swollen, leaking, damaged or abnormally hot. Keep it away from excessive heat and follow the manufacturer's handling instructions."
+          ]
+        ],
+        [
+          "An efficient purchase decision",
+          [
+            "Write down device power needs, desired number of recharges, size/weight preference and travel restrictions. Compare verified Wh and output specs, then decide whether the extra capacity is worth carrying. More capacity is not always a better fit."
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "wifi-24-vs-5",
+      "title": "2.4 GHz vs. 5 GHz Wi-Fi: which should you use?",
+      "dek": "A practical guide to coverage, congestion, compatibility and choosing a Wi-Fi band.",
+      "category": "Wi-Fi",
+      "diagram": "wifi",
+      "updated": "2026-10-09",
+      "sources": [
+        [
+          "Wi-Fi Alliance — Wi-Fi technologies",
+          "https://www.wi-fi.org/discover-wi-fi"
+        ]
+      ],
+      "sections": [
+        [
+          "Different bands solve different needs",
+          [
+            "Many home networks support both 2.4 GHz and 5 GHz wireless bands. Broadly, 2.4 GHz often offers better range through obstacles in typical conditions, while 5 GHz can offer more channel capacity and higher throughput under suitable conditions. Actual results depend on the router, client, congestion, walls and local regulations.",
+            "A band name does not guarantee a speed. A poorly placed router on an uncongested band may outperform a newer one operating under heavy interference. Test your real devices where you use them."
+          ]
+        ],
+        [
+          "When 2.4 GHz can be helpful",
+          [
+            "Some older or simpler connected devices support only 2.4 GHz. That band can also be practical where coverage matters more than peak data transfer. However, it is widely shared with other equipment and nearby wireless networks, so interference can still make performance poor.",
+            "If a smart-home accessory refuses to join the network, consult its manufacturer's setup instructions. Avoid disabling important security settings as a workaround."
+          ]
+        ],
+        [
+          "When 5 GHz can be helpful",
+          [
+            "For devices relatively close to an access point and able to support it, 5 GHz often works well for high-throughput activities. The higher-frequency signal can weaken more over some walls and obstacles than a lower-frequency alternative.",
+            "It is not necessary to manually manage every device. Many routers use automatic band steering; manufacturer defaults may work well. Use simple comparisons rather than assuming the higher-numbered band always wins."
+          ]
+        ],
+        [
+          "A fair comparison method",
+          [
+            "Use the same client and destination, test in the same room at roughly the same time, and repeat tests more than once. Look for repeatable differences in responsiveness and reliability, not just one peak result.",
+            "If problems occur only in a far room, think about router position or network coverage before assuming the band is incorrectly configured."
+          ]
+        ],
+        [
+          "About Wi-Fi 6 and other names",
+          [
+            "Wi-Fi generation names describe sets of capabilities and are not interchangeable with frequency bands. Some newer equipment supports additional bands, but both the router and client must support the relevant features to benefit. Consult official manufacturer specifications for compatibility."
+          ]
+        ],
+        [
+          "The practical answer",
+          [
+            "Leave band selection automatic when it works. If a specific device has a repeated problem, test the supported alternatives, verify security settings and document the outcome. Change one setting at a time so you can tell what made a difference."
+          ]
+        ]
+      ]
+    },
+    {
+      "slug": "led-running-cost",
+      "title": "How much does an LED light bulb cost to run?",
+      "dek": "Use wattage and hours to compare lighting energy costs without confusing brightness and power.",
+      "category": "Energy",
+      "diagram": "energy",
+      "updated": "2026-10-09",
+      "sources": [
+        [
+          "U.S. Department of Energy — Lighting choices to save money",
+          "https://www.energy.gov/energysaver/lighting-choices-save-you-money"
+        ],
+        [
+          "U.S. Department of Energy — Estimating energy use",
+          "https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use"
+        ]
+      ],
+      "sections": [
+        [
+          "Start with the actual wattage",
+          [
+            "Brightness and electricity use are not the same measure. The watt number describes the bulb's power use under specified conditions, while lumens describe the amount of visible light emitted. For comparing how much lighting costs to operate, the watt rating and hours of use matter most.",
+            "Read the specific lamp packaging or documentation instead of assuming all bulbs marketed as the same brightness consume the same number of watts."
+          ]
+        ],
+        [
+          "A useful calculation",
+          [
+            "A hypothetical 9-watt lamp running five hours a day for 30 days consumes 1.35 kWh: 9 ÷ 1,000 × 5 × 30. At an example price of $0.15 per kWh, the energy portion of the monthly cost is about $0.20. Actual rates, run times and power use will differ.",
+            "A full household electricity bill often includes fixed fees and other charges; this example covers the bulb's estimated energy consumption alone."
+          ]
+        ],
+        [
+          "Comparing two options fairly",
+          [
+            "If two light sources provide comparable useful illumination, comparing their electrical wattages is a reasonable starting point for energy costs. But wattage is not the only purchase consideration: brightness, beam direction, fit, color appearance, dimmer compatibility and expected lifespan matter too.",
+            "An inexpensive bulb that flickers with a particular dimmer or creates uncomfortable glare may be a poor purchase even if its running cost is low. Check compatibility and manufacturer recommendations."
+          ]
+        ],
+        [
+          "How long the light is on matters",
+          [
+            "A light that runs for ten minutes a day has much less opportunity to affect energy costs than a light used for long evening hours. Estimate typical hours rather than multiplying every lamp by 24 hours.",
+            "For shared spaces or irregular schedules, take a representative week and note how often each light is used. That can make your assumptions more realistic."
+          ]
+        ],
+        [
+          "Safety and compatibility",
+          [
+            "Use bulbs suited to the fixture's electrical and thermal ratings. Enclosed fixtures, outdoor locations and dimmers may have specific lamp requirements. Do not exceed the fixture's rated limits or modify electrical wiring without appropriate expertise."
+          ]
+        ],
+        [
+          "Try the calculation yourself",
+          [
+            "Use the site's electricity cost calculator with your bulb's watts and your bill's rate. Then compare the estimated energy savings with the price of replacing a working bulb. This lets you decide based on your situation rather than an exaggerated savings claim."
+          ]
+        ]
+      ]
+    }
+  ]
+}
