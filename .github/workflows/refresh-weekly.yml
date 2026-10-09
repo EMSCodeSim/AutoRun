@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate queued editorial inputs
+        run: |
+          python3 -m compileall -q scripts/
+          python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Apply at most one prepared substantive improvement
         run: python3 scripts/refresh_content.py
       - name: Validate content and internal links
