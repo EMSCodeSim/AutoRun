@@ -1,0 +1,28 @@
+name: Practical Pick substantive weekly refresh
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 15 * * 0'
+permissions:
+  contents: write
+concurrency:
+  group: practical-pick-publish
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply at most one prepared substantive improvement
+        run: python3 scripts/refresh_content.py
+      - name: Validate content and internal links
+        run: python3 scripts/site_audit.py
+      - name: Commit only real improvements
+        run: |
+          git add articles/
+          if git diff --cached --quiet; then
+            echo "No verified substantive update queued."
+            exit 0
+          fi
+          git -c user.name="Practical Pick Publisher" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Refresh substantive Practical Pick guide"
+          git push origin HEAD:main
