@@ -1,38 +1,39 @@
-# AutoRun — AI Business From $0
+# Practical Pick
 
-AutoRun is a public experiment: can an autonomous AI build a legitimate, sustainable business starting with exactly $0?
+**Practical Pick** is an independent practical-buying-guide website. This repository formerly hosted **AutoRun — AI Business From $0**, which the owner explicitly chose to replace. The previous content may remain in Git history; the deployed root site now serves Practical Pick.
 
-The agent chooses what market to pursue, what to build, what to publish, how to price, what to test, and when to pivot. Humans provide infrastructure, safety guardrails, and permissions — not ordinary business decisions.
+## Current state
 
-## Starting condition
+- Responsive standalone HTML/CSS website at repository root.
+- Three original introductory guides in `articles/`.
+- AI drafting tool in `scripts/generate_draft.py` (never directly publishes).
+- Weekly GitHub Actions workflow at `.github/workflows/practical-pick-draft.yml`.
+- No active AdSense application, ad unit, revenue claim, or affiliate account.
+- No AI API credentials committed to source control.
 
-- Day: 0
-- Cash: $0.00
-- Revenue: $0.00
-- Expenses: $0.00
-- Customers: 0
-- Business model: not chosen
-- Market: not chosen
-- Product: not chosen
+## Deployment
 
-## Core rules
+The existing Netlify project may already deploy the repository root. Keep its publish directory as the repository root (or `.`) and build command blank, because this is static HTML. Confirm the existing Netlify site's Git branch and deploy configuration before assuming the new version is publicly live.
 
-The permanent constitution lives in `CONSTITUTION.md`.
+## Optional AI drafting
 
-## Public record
+The draft workflow runs Tuesdays at 14:15 UTC or manually. Without credentials, it does nothing and costs nothing. To enable it, only after independently verifying that the provider has a genuinely free option without charges or auto-converting billing, configure GitHub Actions:
 
-Every meaningful decision, experiment, result, failure, revenue event, expense, and requested tool should be recorded. The public dashboard must distinguish real verified results from hypotheses or simulations.
+- Repository secret `PRACTICAL_PICK_AI_API_KEY`
+- Repository variable `PRACTICAL_PICK_AI_BASE_URL` (HTTPS OpenAI-compatible API base)
+- Repository variable `PRACTICAL_PICK_AI_MODEL`
 
-## Daily cycle
+The generator cannot browse live sources, so its output is unverified. It creates a draft proposal pull request, **not** a public article. Verify the draft against current authoritative sources, edit, and intentionally publish once ready. The weekly job can be disabled in the Actions interface.
 
-Each autonomous run should:
+## AdSense launch requirements
 
-1. Review measurable results since the prior run.
-2. Inspect active experiments and unresolved decisions.
-3. Choose a small number of focused actions.
-4. Execute only actions allowed by the constitution and available tools.
-5. Record what happened, including failures.
-6. Update the business state and public dashboard.
-7. Leave uncertain experiments running long enough to gather evidence.
+Before applying for ads, provide a real contact method, publisher information, privacy/cookie policy appropriate for the jurisdictions served, any legally required consent management, stable domain and canonical/sitemap configuration, original valuable articles, and accurate ad/affiliate disclosure. Add AdSense code and ads.txt only from an approved publisher account. Never invent publisher IDs.
 
-The agent should not manufacture activity simply because a new day began.
+## Editorial standards
+
+- No fake testing, ratings, reviews or endorsements.
+- Clear separation of documented specifications and experience.
+- Link relevant primary sources where claims warrant verification.
+- No scaled publication of thin AI-generated pages.
+- Never fabricate traffic, earnings, costs or affiliate commissions.
+- Do not activate paid APIs or usage-based billing without explicit approval.

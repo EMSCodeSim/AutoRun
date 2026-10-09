@@ -1,0 +1,34 @@
+name: Practical Pick editorial drafts
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 14 * * 2'
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+      - name: Generate proposed draft (unpublished)
+        env:
+          PRACTICAL_PICK_AI_API_KEY: ${{ secrets.PRACTICAL_PICK_AI_API_KEY }}
+          PRACTICAL_PICK_AI_BASE_URL: ${{ vars.PRACTICAL_PICK_AI_BASE_URL }}
+          PRACTICAL_PICK_AI_MODEL: ${{ vars.PRACTICAL_PICK_AI_MODEL }}
+        run: python3 scripts/generate_draft.py
+      - name: Create review PR if draft was produced
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: drafts/
+          commit-message: 'chore: propose Practical Pick editorial draft'
+          branch: bot/practical-pick-draft
+          delete-branch: true
+          title: 'Review: AI-assisted Practical Pick editorial draft'
+          body: |
+            This is an UNPUBLISHED draft. Verify every material factual claim,
+            review primary sources, correct any errors, and manually prepare
+            HTML for publication only after approval. Never claim hands-on
+            testing that did not occur. Do not auto-merge.
