@@ -44,7 +44,7 @@ payload = {
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": f"Prepare a useful plain-English checklist about {topic}."},
     ],
-    "temperature": 0.3,
+    "max_completion_tokens": 3500,
 }
 request = urllib.request.Request(
     URL + "/chat/completions",
@@ -52,7 +52,7 @@ request = urllib.request.Request(
     headers={"Content-Type": "application/json", "Authorization": "Bearer " + KEY},
     method="POST",
 )
-with urllib.request.urlopen(request, timeout=60) as response:
+with urllib.request.urlopen(request, timeout=120) as response:
     result = json.load(response)
 raw = result["choices"][0]["message"]["content"].strip()
 if raw.startswith("```"):
