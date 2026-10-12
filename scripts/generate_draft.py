@@ -20,14 +20,14 @@ if not URL.startswith("https://"):
 TOPICS = [
     "USB-C cable compatibility buying questions",
     "Practical power bank buying considerations",
-    "Desk chair adjustability checklist",
-    "Home toolkit essentials for beginners",
-    "Home office task lighting buying checklist",
-    "Choosing a portable storage drive",
-    "Evaluating a home air purifier specification sheet",
+    "How to troubleshoot slow Wi-Fi in one room",
+    "How to estimate standby electricity use at home",
+    "USB-C charger wattage and compatibility troubleshooting",
+    "When a mesh Wi-Fi system helps and when it does not",
+    "How to check laptop charging compatibility",
 ]
 today = datetime.date.today()
-topic = TOPICS[(today.toordinal() // 7) % len(TOPICS)]
+topic = TOPICS[(today.toordinal() // 3) % len(TOPICS)]
 system_prompt = (
     "Write an original unpublished consumer educational draft. "
     "You do not have verified live web access. Never invent source URLs, "
@@ -35,8 +35,8 @@ system_prompt = (
     "reviews, endorsements, statistics, or claims of independent verification. "
     "Suggest primary-source verification tasks. "
     "Return only JSON keys: title, introduction, sections (list with heading and "
-    "body strings), verification_tasks (list of strings). Provide at least four "
-    "substantive sections. Avoid safety-critical advice. The output is a DRAFT."
+    "body strings), verification_tasks (list of strings). Provide at least five "
+    "substantive sections and at least 700 words across the introduction and sections. Focus on practical diagnostic steps, limitations, and a useful decision checklist. Avoid safety-critical advice. The output is a DRAFT."
 )
 payload = {
     "model": MODEL,
@@ -60,8 +60,11 @@ if raw.startswith("```"):
 draft = json.loads(raw)
 if not isinstance(draft, dict) or not isinstance(draft.get("sections"), list):
     raise ValueError("Unexpected model response structure")
-if len(draft["sections"]) < 4 or not draft.get("verification_tasks"):
+if len(draft["sections"]) < 5 or not draft.get("verification_tasks"):
     raise ValueError("Draft requires four sections and verification tasks")
+word_count = len((str(draft.get("introduction", "")) + " " + " ".join(str(s.get("body", "")) for s in draft["sections"])).split())
+if word_count < 700:
+    raise ValueError("Draft below 700-word editorial minimum")
 name = re.sub("[^a-z0-9]+", "-", str(draft.get("title", topic)).lower()).strip("-")[:64]
 draft["status"] = "UNPUBLISHED_REQUIRES_HUMAN_FACT_CHECK"
 draft["date"] = str(today)
