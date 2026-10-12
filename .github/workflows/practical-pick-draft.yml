@@ -1,8 +1,8 @@
-name: Practical Pick editorial drafts
+name: Practical Pick twice-weekly editorial drafts
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 14 * * 2'
+    - cron: '15 12 * * 1,4'
 permissions:
   contents: write
   pull-requests: write
@@ -28,7 +28,7 @@ jobs:
           delete-branch: true
           title: 'Review: AI-assisted Practical Pick editorial draft'
           body: |
-            This is an UNPUBLISHED draft. Verify every material factual claim,
+            This is an UNPUBLISHED draft for the Tuesday/Friday release queue. Verify every material factual claim,
             review primary sources, correct any errors, and manually prepare
-            HTML for publication only after approval. Never claim hands-on
+            a complete validated publishing-queue entry only after approval. Never claim hands-on
             testing that did not occur. Do not auto-merge.
