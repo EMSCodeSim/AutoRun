@@ -5,6 +5,7 @@ on:
     - cron: '25 12 * * 1'
 permissions:
   contents: read
+  issues: write
 jobs:
   inventory:
     runs-on: ubuntu-latest
@@ -20,4 +21,18 @@ jobs:
           print(f"Approved unpublished guides: {remaining}")
           if remaining < 4:
               print("WARNING: fewer than two weeks of articles remain; review and replenish the queue.")
+              Path("queue-warning.txt").write_text(str(remaining))
           PY
+      - name: Create editorial replenishment issue
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -f queue-warning.txt ]; then exit 0; fi
+          count=$(cat queue-warning.txt)
+          existing=$(gh issue list --state open --limit 100 --json title,number --jq '.[] | select(.title == "Replenish Practical Pick article queue") | .number' | head -1)
+          if [ -z "$existing" ]; then
+            gh issue create --title "Replenish Practical Pick article queue" --body "Only $count approved unpublished guides remain. Review AI-assisted draft PRs and validate every claim against primary sources. Add complete, original, reviewed entries to content/publishing-queue.json until eight unpublished guides are ready. Do not auto-publish unreviewed drafts."
+          else
+            echo "Editorial replenishment issue already open: $existing"
+          fi
