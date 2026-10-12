@@ -15,8 +15,8 @@ jobs:
       - name: Generate proposed draft (unpublished)
         env:
           PRACTICAL_PICK_AI_API_KEY: ${{ secrets.PRACTICAL_PICK_AI_API_KEY }}
-          PRACTICAL_PICK_AI_BASE_URL: ${{ vars.PRACTICAL_PICK_AI_BASE_URL }}
-          PRACTICAL_PICK_AI_MODEL: ${{ vars.PRACTICAL_PICK_AI_MODEL }}
+          PRACTICAL_PICK_AI_BASE_URL: https://api.openai.com/v1
+          PRACTICAL_PICK_AI_MODEL: ${{ vars.PRACTICAL_PICK_AI_MODEL || 'gpt-4.1-mini' }}
         run: python3 scripts/generate_draft.py
       - name: Create review PR if draft was produced
         uses: peter-evans/create-pull-request@v7
