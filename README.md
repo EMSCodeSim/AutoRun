@@ -16,7 +16,7 @@ This is a focused, advertiser-free site with free troubleshooting checklists, on
 ## Automation
 
 1. **Weekly QA:** `.github/workflows/site-qa.yml` runs a local-link, metadata and site-file audit on commits and Mondays, and produces a review queue. It does not fabricate article update dates or claim that outbound sources were checked.
-2. **AI drafts:** `.github/workflows/practical-pick-draft.yml` can propose one draft per week **only after** a free/approved OpenAI-compatible model and API key are configured. AI drafts are not published automatically. Every factual claim and primary source should be confirmed before publishing.
+2. **AI drafts:** `.github/workflows/practical-pick-draft.yml` can propose drafts on Monday and Thursday **only after** a free/approved OpenAI-compatible model and API key are configured. AI drafts are not published automatically. Every factual claim and primary source should be confirmed before publishing.
 3. **Publishing:** merge genuinely reviewed pages into main. Static Netlify deployment then updates the site through its existing Git integration.
 
 ## Organic growth plan
@@ -56,15 +56,15 @@ When a verified custom domain is introduced, update the canonical URLs, sitemap 
 
 ## Automatic illustrated long-form publishing (October 2026)
 
-The site publishes one **pre-written, structured, source-linked guide** per Wednesday using `.github/workflows/publish-weekly.yml`. The queue is in `content/publishing-queue.json` and the stdlib-only generator is `scripts/publish_queue.py`. A new article includes original inline SVG explanatory artwork, clear subsections, linked primary sources, no false hands-on claims, and a machine-readable Article schema. The publisher also refreshes `latest.html` and the XML sitemap, runs `scripts/site_audit.py`, and commits only actual changes. Netlify deploys from GitHub main.
+The site publishes one **pre-written, structured, source-linked guide** per Tuesday and Friday using `.github/workflows/publish-weekly.yml`. The queue is in `content/publishing-queue.json` and the stdlib-only generator is `scripts/publish_queue.py`. A new article includes original inline SVG explanatory artwork, clear subsections, linked primary sources, no false hands-on claims, and a machine-readable Article schema. The publisher also refreshes `latest.html` and the XML sitemap, runs `scripts/site_audit.py`, and commits only actual changes. Netlify deploys from GitHub main.
 
-The first article was published with this release. Five additional substantive guides are ready for release, one each week. **This is a finite queue**: when exhausted, the publisher explicitly does not fabricate articles or fake updated dates. To keep publication going indefinitely, a contributor or connected AI drafting service must add additional credible article entries to the queue after checking source quality. The optional AI draft workflow already in this repository prepares unpublished suggestions, but requires an explicitly approved API provider; it cannot automatically guarantee accuracy.
+The first article was published with this release. Five additional substantive guides are ready for release, at most one per publishing run. **This is a finite queue**: when exhausted, the publisher explicitly does not fabricate articles or fake updated dates. To keep publication going indefinitely, a contributor or connected AI drafting service must add additional credible article entries to the queue after checking source quality. The optional AI draft workflow already in this repository prepares unpublished suggestions, but requires an explicitly approved API provider; it cannot automatically guarantee accuracy.
 
 ### Editing workflow
 
 1. Add one new complete article object to `content/publishing-queue.json` with unique slug, verified primary-source references, at least five sections and 325 words in body sections.
 2. Confirm no invented personal experience, testing, pricing or manufacturer claims.
-3. On Wednesday, the free GitHub Actions job publishes at most one unpublished queue entry. The workflow can also be started manually in GitHub Actions.
+3. On Tuesday and Friday, the free GitHub Actions job publishes at most one unpublished queue entry. The workflow can also be started manually in GitHub Actions.
 4. Monitor the weekly QA workflow. If sources materially change, update existing articles and note the real changes rather than silently changing the publication date.
 
 ### Operating limits
@@ -74,18 +74,26 @@ The first article was published with this release. Five additional substantive g
 - Advertising is not active, and there is no guarantee of search traffic or AdSense approval.
 - GitHub Actions scheduled workflows can be delayed and may be disabled after 60 days of repository inactivity on public repositories. Confirm the workflow actually runs in Actions.
 
-## Editorial release cadence — three publishing slots, one refresh, one tool
+## Editorial release cadence — two publishing slots, one refresh, one tool
 
 Schedules are GitHub Actions cron times in UTC and can run later than scheduled:
 
 | Schedule | Workflow | What actually happens |
 | --- | --- | --- |
-| Monday, Wednesday, Friday at 13:37 UTC | `.github/workflows/publish-weekly.yml` | Publish **at most one** previously prepared, source-linked illustrated guide per slot; run static QA first |
+| Tuesday and Friday at 15:37 UTC | `.github/workflows/publish-weekly.yml` | Publish **at most one** previously prepared, source-linked illustrated guide per slot; run static QA first |
 | Sunday at 15:15 UTC | `.github/workflows/refresh-weekly.yml` | Apply **at most one** specific substantive revision from `content/refresh-queue.json`, with a real textual change; otherwise skip |
 | First Tuesday each month at 15:42 UTC | `.github/workflows/tools-monthly.yml` | Publish **at most one** previously built and reviewed tool from `content/tool-release-queue.json` and update links/sitemap |
 
 A prepared illustrated guide uses the queue schema in `content/publishing-queue.json`. Adding a new entry requires factual review, at least five meaningful sections, credible source references and no fabricated test results. All release tasks are gated by `scripts/site_audit.py` before committing. The generator never invents an article when the queue is empty.
 
-**Capacity and limitations:** Five further illustrated guides, one substantive page revision and one runtime calculator are initially available for these schedules. This is NOT enough to sustain three new articles each week or a new tool each month indefinitely. The editor or an approved free AI research service must continue adding high-quality, source-checked queue items. The existing optional AI draft action needs provider credentials and does not automatically supply verified queue entries.
+**Capacity and limitations:** Five further illustrated guides, one substantive page revision and one runtime calculator are initially available for these schedules. This is NOT enough to sustain two new articles each week or a new tool each month indefinitely. The editor or an approved free AI research service must continue adding high-quality, source-checked queue items. The existing optional AI draft action needs provider credentials and does not automatically supply verified queue entries.
 
 GitHub Actions may disable scheduled workflows for inactivity in public repos, and scheduled runs are not guaranteed to fire at an exact minute. Verify workflow runs, QA results and production deployment after each release. Revisions do not claim source verification unless someone has actually performed it. No AdSense or paid APIs are enabled.
+
+## Keeping the publishing queue stocked
+
+- The draft workflow runs Monday and Thursday and requires `PRACTICAL_PICK_AI_API_KEY` plus `PRACTICAL_PICK_AI_BASE_URL` and `PRACTICAL_PICK_AI_MODEL`. Without these, it safely skips. No provider credentials are supplied by this repository.
+- Review draft pull requests, confirm factual claims against primary sources, then convert approved content into the publishing queue schema. Drafts never publish directly.
+- Maintain a target of eight unpublished approved guides (four weeks at two per week). Check remaining entries by comparing queue slugs with existing `articles/<slug>.html` files.
+- The weekly queue-health workflow opens an editorial issue when fewer than four approved unpublished guides remain. This is a warning, not automatic replenishment.
+- Publishing continues to skip safely when the approved queue is empty. Do not automatically promote unverified AI drafts.
