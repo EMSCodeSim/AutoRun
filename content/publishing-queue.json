@@ -347,6 +347,78 @@
           ]
         ]
       ]
+    },
+    {
+      "slug": "wifi-connected-no-internet",
+      "title": "Wi-Fi connected but no internet? A practical troubleshooting guide",
+      "dek": "Find out whether the problem is your device, router, provider or public Wi-Fi sign-in before resetting settings.",
+      "category": "Wi-Fi",
+      "diagram": "wifi",
+      "updated": "2026-10-15",
+      "sources": [
+        [
+          "Microsoft Support — Fix Wi-Fi connection issues in Windows",
+          "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows"
+        ],
+        [
+          "Apple Support — If you can't connect to Wi-Fi on iPhone or iPad",
+          "https://support.apple.com/en-lamr/111786"
+        ],
+        [
+          "Apple Support — Use captive Wi-Fi networks",
+          "https://support.apple.com/en-afri/102554"
+        ]
+      ],
+      "sections": [
+        [
+          "Why Wi-Fi can be connected while the internet is down",
+          [
+            "A Wi-Fi connection links your device to a nearby access point; it does not guarantee that the router or internet provider can reach websites. A device can therefore show strong signal bars while apps cannot load. First distinguish a complete outage from a single failed website or app. Try two unrelated sites and note the exact warning. If only one service fails while others work, investigate that service rather than immediately replacing equipment. A connection-status icon is useful evidence, but it is not a complete diagnosis."
+          ]
+        ],
+        [
+          "Use two devices to locate the fault",
+          [
+            "Test a second phone or computer on the same Wi-Fi network. If both fail, investigate the router, modem and provider before changing either device. If only one fails, concentrate on that device. When possible, temporarily turn off Wi-Fi on a phone and test over cellular data, taking care not to use unexpected mobile data. If cellular works while every home Wi-Fi device fails, the websites are unlikely to be the shared cause. Record which devices and connections worked; this simple comparison often saves time and unnecessary purchases."
+          ]
+        ],
+        [
+          "Check the provider and physical connection",
+          [
+            "Using cellular service if available, check your provider's official outage page or support channel. Look at the router and modem or fiber terminal for clearly labeled connection and alarm lights, interpreting them with the equipment manual. A working Wi-Fi light does not prove that the provider connection is healthy. Check accessible cables and power connections without opening equipment. Stop using damaged or unusually hot electrical accessories. If the provider reports an outage, wait for restoration rather than changing settings. Otherwise, follow the equipment maker's normal restart procedure and allow time to reconnect."
+          ]
+        ],
+        [
+          "Restart safely; do not factory reset",
+          [
+            "A restart means switching equipment off and on as its manufacturer recommends. A factory reset is different: it can erase network names, passwords and customized provider settings. Do not press a recessed Reset button as a first troubleshooting step. If you have separate modem and router units, follow the provider's recommended restart order. Test the connection again before doing anything more complicated. If it returns, note what helped and stop changing settings. If it does not, keep the observations for a support call rather than repeating restarts indefinitely."
+          ]
+        ],
+        [
+          "When only one device has the problem",
+          [
+            "Turn Wi-Fi off and on, reconnect to the correct network and restart the affected device. Check whether it works on another trusted Wi-Fi network. Windows users can run Microsoft's Network and Internet troubleshooter; iPhone and iPad users can inspect the Wi-Fi settings and any No Internet Connection message. Follow the linked official instructions because menus vary by operating-system version. Consider whether a recently enabled VPN, proxy, filtering app or security tool coincided with the problem. On managed work or school devices, ask the administrator before altering such settings or weakening protection."
+          ]
+        ],
+        [
+          "Recognize DNS and IP-address clues",
+          [
+            "A device may reach its router but fail to translate website names into addresses, which can suggest a DNS problem. Microsoft documents checking network configuration, renewing an address and clearing the DNS resolver cache in Windows. An automatically assigned address beginning with 169.254 can indicate that the computer did not obtain the expected address through DHCP. Neither clue alone proves that the router is defective. Record existing settings before changing DNS or IP configuration. If your network uses fixed addresses, parental controls or business management, seek appropriate guidance rather than switching to arbitrary public DNS servers."
+          ]
+        ],
+        [
+          "Public Wi-Fi may require a sign-in page",
+          [
+            "Hotels, airports and other public networks may let you join Wi-Fi but require a login or acceptance of terms before granting internet access. This is called a captive portal. Apple's guidance for iPhone and iPad is to select the network in Wi-Fi settings and wait for the login screen, or use Join Network when available. Use only the venue's legitimate portal; do not install unfamiliar certificates or profiles to make a hotspot work. Ask the venue for official instructions if the sign-in page never appears. This situation differs from a home broadband outage."
+          ]
+        ],
+        [
+          "Escalate based on what the tests reveal",
+          [
+            "If several devices fail and the provider equipment shows an upstream problem, contact the provider with the outage time, indicator status and restart results. If one device fails on multiple otherwise-working networks, contact its manufacturer or IT support. Resetting network settings on an iPhone or iPad can remove saved Wi-Fi passwords and related cellular or VPN settings, so reserve it for later troubleshooting under Apple's instructions. If devices work near the router but not in a distant room, investigate wireless coverage instead. The goal is to isolate the failure before spending money, erasing settings or making disruptive changes."
+          ]
+        ]
+      ]
     }
   ]
 }
