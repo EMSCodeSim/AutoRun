@@ -419,6 +419,108 @@
           ]
         ]
       ]
+    },
+    {
+      "slug": "space-heater-running-cost",
+      "title": "How much does a space heater cost to run? Calculate it before you plug in",
+      "dek": "Use your heater's wattage, actual running time and electricity rate to estimate daily and monthly costs, then check the safety rules that matter.",
+      "category": "Energy",
+      "diagram": "energy",
+      "updated": "2026-10-26",
+      "sources": [
+        [
+          "U.S. Energy Information Administration — Measuring electricity",
+          "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php"
+        ],
+        [
+          "U.S. Energy Information Administration — Factors affecting electricity prices",
+          "https://www.eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php"
+        ],
+        [
+          "U.S. Consumer Product Safety Commission — Portable electric heater safety habits",
+          "https://www.cpsc.gov/s3fs-public/Portable_Electric_Heater_Safety_CPSC_Neighborhood_Safety_Network.pdf"
+        ],
+        [
+          "U.S. Consumer Product Safety Commission — Winter weather and portable heater safety",
+          "https://www.cpsc.gov/Newsroom/News-Releases/2025/As-Winter-Weather-Impacts-Millions-This-Thanksgiving-CPSC-Issues-Safety-Tips-to-Help-Families-Prevent-Carbon-Monoxide-Poisoning-and-Fires"
+        ],
+        [
+          "ENERGY STAR — Ductless heating and cooling",
+          "https://www.energystar.gov/products/ductless_heating_cooling"
+        ]
+      ],
+      "sections": [
+        [
+          "The quick answer: watts, hours and your rate",
+          [
+            "A portable electric heater's running cost depends primarily on how much electrical power it draws, how long its heating element actually operates, and the price you pay per kilowatt-hour (kWh). A heater marked 1,500 watts draws about 1.5 kilowatts while operating at that rated input. At a purely illustrative electricity rate of $0.20 per kWh, one full-power hour costs about $0.30 in energy charges. Four full-power hours cost about $1.20. These are calculations, not measured results or a prediction of anyone's utility bill.",
+            "An adjustable thermostat complicates the estimate in a useful way: the heater may switch its heating element off after reaching the selected temperature. Four hours plugged in does not always mean four hours at full power. Start with the full-power estimate as a planning scenario, then refine it if you know the actual operating time."
+          ]
+        ],
+        [
+          "Find the wattage before doing any math",
+          [
+            "Check the heater's rating label, manual or manufacturer specification for input power in watts (W). A unit may list different wattages for low and high settings; use the one you actually select. If the label lists electrical current and voltage instead, do not assume that multiplying those numbers gives an exact measured average power draw. The manufacturer's stated wattage is the safer starting point for a simple consumer estimate.",
+            "Do not confuse a heater's physical size, marketing name or advertised room coverage with electricity use. Two differently styled heaters can have the same rated wattage. Likewise, a timer setting tells you how long a unit is permitted to operate, not necessarily how long its heating element is energized."
+          ]
+        ],
+        [
+          "Calculate cost with a three-step formula",
+          [
+            "First, divide watts by 1,000 to convert power to kilowatts. Second, multiply kilowatts by the hours the heater is drawing that power to obtain kilowatt-hours. Third, multiply kilowatt-hours by your electricity price in dollars per kWh. In one line: estimated energy cost = (watts ÷ 1,000) × full-power hours × electricity rate. The U.S. Energy Information Administration explains that watts measure power while kilowatt-hours measure electricity used over time.",
+            "For a monthly estimate, multiply the daily energy cost by the number of days used. Keep units visible as you calculate: 1,500 W ÷ 1,000 = 1.5 kW; 1.5 kW × 4 hours = 6 kWh; 6 kWh × $0.20/kWh = $1.20. Multiply $1.20 by 30 days to get $36 in hypothetical energy charges. The math assumes identical use every day, which rarely happens exactly."
+          ]
+        ],
+        [
+          "Compare common settings without confusing them with measured use",
+          [
+            "At the same illustrative $0.20/kWh rate, a 750-watt setting running continuously for four hours uses 3 kWh and costs $0.60. A 1,000-watt setting over four full-power hours uses 4 kWh and costs $0.80. A 1,500-watt setting for four full-power hours uses 6 kWh and costs $1.20. Over 30 days of identical use, those scenarios correspond to $18, $24 and $36 in energy charges, respectively.",
+            "These examples do not mean the lower setting always costs less to maintain the same room temperature. A lower setting might run longer, while a higher setting might cycle off sooner. Room size, insulation, drafts, outdoor temperature, thermostat placement and the amount of heat already supplied by the home's heating system all influence the result."
+          ]
+        ],
+        [
+          "What a thermostat changes—and what it does not",
+          [
+            "Suppose a 1,500-watt heater is switched on for four hours, but its heating element runs for only two of those hours because the thermostat cycles it on and off. Ignoring small additional consumption from controls or a fan, the heating element uses approximately 1.5 kW × 2 hours = 3 kWh, or $0.60 at the example rate. That is half the four-hour continuous-heating scenario.",
+            "Do not assume a 50 percent duty cycle just because a heater has a thermostat. During a cold spell, a heater in a drafty room may run almost continuously; in a well-insulated room it may cycle much less. If you cannot establish actual energized time, show a range of scenarios instead of presenting one precise monthly cost as fact. Never defeat safety controls to obtain a measurement."
+          ]
+        ],
+        [
+          "Use the right electricity price from your bill",
+          [
+            "Look for your utility's price per kWh, then determine whether that number represents only an energy-supply charge or includes additional variable delivery charges. Some customers face time-of-use prices, seasonal rates, tiered usage charges or separate fixed fees. A fixed monthly customer charge usually will not change because you run one more appliance, but variable charges can. The EIA documents that electricity prices vary by location and customer type.",
+            "If your bill includes several variable per-kWh components, adding the applicable components may provide a better estimate of the extra cost than using only the advertised supply rate. If you have time-of-use pricing, estimate hours in each rate period separately and add them. Do not treat the example $0.20/kWh as a current national average or a price guaranteed for your home."
+          ]
+        ],
+        [
+          "Ceramic, oil-filled and infrared: does the style change the bill?",
+          [
+            "Portable ceramic fan heaters, oil-filled radiators and many infrared room heaters commonly rely on electric resistance to create heat. At the same actual electrical energy use, there is no magic efficiency bonus that makes one resistance heater deliver dramatically more total heat into the room. Their differences often concern how quickly and where warmth is felt, whether a fan moves air, and how a thermostat manages operation.",
+            "An oil-filled heater does not burn its internal oil as fuel; the oil stores and distributes heat. An infrared heater can make a person or nearby surface feel warm without warming all the room air equally. Either may be more comfortable for a particular situation, but comfort is not a substitute for measured energy consumption. Compare wattage, safety features and appropriate use rather than relying on unsupported 'pennies a day' advertising."
+          ]
+        ],
+        [
+          "Will a space heater save money compared with central heating?",
+          [
+            "Sometimes, but only under specific conditions. Heating one occupied room while safely reducing the heat delivered elsewhere might lower overall heating demand. Running a portable heater on top of an unchanged central heating schedule usually adds electricity consumption rather than replacing it. The outcome depends on your main heating fuel, equipment efficiency, home layout, heat loss, electricity tariff and whether other rooms can actually be kept cooler without causing problems.",
+            "Electric resistance heaters and heat pumps should not be treated as interchangeable. A heat pump moves heat instead of generating it solely through resistance, which can reduce electricity use for comparable heating needs under appropriate conditions. ENERGY STAR describes ductless heat pumps as an efficient option for suitable homes. For a single cold room, first check drafts, blocked vents and thermostat settings before assuming a second heater is the least expensive fix."
+          ]
+        ],
+        [
+          "Safety is not optional when choosing a location or outlet",
+          [
+            "The U.S. Consumer Product Safety Commission advises keeping all sides of a portable heater at least three feet from bedding, curtains, furniture, papers and other combustible items. Put it on a stable, level surface where children or pets will not knock it over. Keep it away from water. Plug an electric portable heater directly into a suitable wall outlet—not a power strip or extension cord—and do not route its cord beneath a rug or carpet.",
+            "Never leave a portable heater running while you sleep or when it is unattended. If its plug or cord becomes hot, disconnect it and seek qualified service; if the wall outlet itself is hot, contact a qualified electrician. Do not use a heater with a damaged cord, plug or housing. Before using an older or secondhand model, check official recall information. A bargain electricity estimate is never a reason to ignore these precautions."
+          ]
+        ],
+        [
+          "A five-minute decision checklist",
+          [
+            "Write down the heater's rated watts and the setting you plan to use. Choose a realistic number of full-power hours per day, not just the number of hours it is plugged in. Find the relevant variable price per kWh on your bill. Calculate daily and monthly energy cost for a high-use and a lower-use scenario. Finally, check whether the heater can be positioned and connected safely without extension cords, power strips or combustible materials nearby.",
+            "Use Practical Pick's free electricity cost calculator to compare wattage, hours and your own rate; the result is an energy-only estimate, not a forecast of your entire utility bill. If the predicted cost is too high, consider addressing drafts or evaluating your existing heating system rather than shopping for a supposedly miraculous resistance heater. The best decision combines realistic energy math, comfort and safe operation."
+          ]
+        ]
+      ]
     }
   ]
 }
