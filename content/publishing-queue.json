@@ -630,6 +630,115 @@
           ]
         ]
       ]
+    },
+    {
+      "slug": "phone-stops-charging-at-80-percent",
+      "title": "Why Does My Phone Stop Charging at 80%? Check the Setting Before Replacing Anything",
+      "dek": "An 80% charging pause may be intentional. Check iPhone, Pixel and Galaxy battery limits, heat warnings and real charging faults in the right order.",
+      "category": "Charging",
+      "diagram": "charging",
+      "updated": "2026-11-02",
+      "sources": [
+        [
+          "Apple Support — Charge Limit and Optimized Battery Charging",
+          "https://support.apple.com/en-us/108055"
+        ],
+        [
+          "Apple Support — If your iPhone won't charge",
+          "https://support.apple.com/en-us/108805"
+        ],
+        [
+          "Apple Support — iPhone and iPad temperature behavior",
+          "https://support.apple.com/en-us/118431"
+        ],
+        [
+          "Google Pixel Help — Get the most life from your Pixel battery",
+          "https://support.google.com/pixelphone/answer/6090612"
+        ],
+        [
+          "Samsung Support — Galaxy Battery protection in One UI 6.1",
+          "https://www.samsung.com/ph/support/mobile-devices/galaxy-battery-protection-feature-in-one-ui-6-1/"
+        ]
+      ],
+      "sections": [
+        [
+          "The short answer: 80% is often a feature, not a fault",
+          [
+            "If your phone repeatedly pauses at about 80% while otherwise charging normally, first check its battery-protection settings. Many modern phones intentionally limit how long their batteries remain fully charged. A fixed limit and a delayed finish are different: a fixed limit can hold the charge near 80% until you change it, while an adaptive feature may wait and finish charging before you normally unplug.",
+            "Heat is another reason charging can slow or pause near that level. A phone that pauses only in a warm car or while running navigation needs a different investigation from one that stops at precisely the same percentage every night. The number alone cannot prove a cable, charger or battery has failed. Start with the screen message and model-specific settings, not a purchase."
+          ]
+        ],
+        [
+          "First, distinguish a limit, a delay and a fault",
+          [
+            "Situation one: the battery reaches roughly 80% consistently, a battery-health setting is enabled, and no warning appears. That points toward an intentional charge limit. Situation two: the phone says charging is optimized, shows an estimated completion time, or resumes later. That points toward a scheduled or adaptive delay. Situation three: charging pauses unpredictably, the device is unusually warm, or a temperature or accessory warning appears. Treat that as a potential environmental or hardware issue.",
+            "Write down the phone model, software version, percentage where charging stops, whether you use wired or wireless charging, any message, and whether charging resumes after cooling. These observations are more informative than repeatedly disconnecting and reconnecting the cable. Avoid a factory reset, battery replacement or new high-wattage charger before distinguishing these cases."
+          ]
+        ],
+        [
+          "iPhone 15 and later: inspect Charge Limit",
+          [
+            "Apple provides a configurable Charge Limit on iPhone 15 models and later. Open Settings, select Battery, then Charging. You can choose a limit from 80% to 100% in 5% steps. When a limit below 100% is selected, the phone normally stops within a few percentage points of that limit. Apple also says it may occasionally charge to 100% to maintain accurate battery estimates. An occasional full charge therefore does not necessarily mean the limit has failed.",
+            "If you need extra capacity for travel, change the limit using the supported charging screen rather than assuming the adapter is defective. On supported software, a temporary override may also be available. Menu labels can change with software releases, so consult Apple's current instructions for your model. If the limit is already 100%, check optimized charging, temperature and accessories instead."
+          ]
+        ],
+        [
+          "Older iPhones: understand Optimized Battery Charging",
+          [
+            "On iPhone 14 and earlier, Apple documents Optimized Battery Charging under Settings, Battery, then Battery Health & Charging. The feature learns charging routines and may delay charging beyond 80% when it predicts the phone will stay plugged in for a long time. It is not a permanent 80% cap. When active, a notification can indicate when the phone expects to finish, and Apple documents a Charge Now option for completing charging sooner.",
+            "Prediction-based charging may behave differently on a weekend trip, during shift work or after a routine change. On newer iPhones, Apple makes Optimized Battery Charging available when Charge Limit is set to 100%. Disabling optimization solely to make the percentage rise sooner may increase battery wear over time. Choose based on when you actually need a full charge."
+          ]
+        ],
+        [
+          "Google Pixel: compare Limit to 80% and Adaptive Charging",
+          [
+            "Google documents Charging optimization under Settings, Battery, Battery health, then Charging optimization on supported Pixel phones. Pixel 6a and later devices can offer Limit to 80%, which prioritizes long-term battery health. Adaptive Charging is different: it aims to finish a 100% charge near when you are likely to unplug. Google says Adaptive Charging may need about 14 days to learn your habits and may not activate when your routine changes.",
+            "Google also describes automatic battery protection during prolonged charging or high-temperature conditions on certain Pixels, which may limit charging to around 70–80% and show a protection message. If a Pixel occasionally reaches 100% even with an 80% limit, Google says periodic full charges help keep capacity estimates accurate. Use the current Pixel support page for your exact model instead of following screenshots from a different Android version."
+          ]
+        ],
+        [
+          "Samsung Galaxy: check Battery protection mode",
+          [
+            "Samsung's One UI 6.1 documentation describes Basic, Adaptive and Maximum Battery protection modes. On supported models, Maximum stops charging at 80%; Adaptive uses protective behavior during expected sleep and changes behavior before waking; Basic allows a full charge and resumes charging after the level falls. Samsung lists the path as Settings, Battery, Battery protection, but cautions that available features vary by model.",
+            "Some Galaxy phones running older software used an 85% protection limit instead. That distinction matters when an online tip claims every Galaxy should stop at 80%. Confirm the actual software and mode selected. If Maximum is enabled and you need a full charge for a particular day, choose a supported alternative mode. A new charging cable will not override a software-imposed limit."
+          ]
+        ],
+        [
+          "Heat and cold can temporarily pause charging",
+          [
+            "Apple says charging can slow or stop when an iPhone becomes too hot or too cold, including during wireless charging. Common heat-producing situations include navigation, games, direct sunlight and other demanding activity while charging. Apple documents a typical operating ambient range of 32–95°F (0–35°C) for iPhone and iPad, although internal temperature and other conditions also matter. A parked car can become too hot even when the outdoor air feels comfortable.",
+            "If the screen shows Charging On Hold or a temperature warning, follow that warning. Move the phone away from direct sunlight, stop demanding apps, and allow it to return gradually to normal temperature. Never refrigerate, freeze or rapidly chill a hot phone. A swollen battery, leaking fluid, smoke, or physically damaged charging equipment is not a settings issue: stop using it and seek qualified manufacturer or service guidance."
+          ]
+        ],
+        [
+          "When the percentage is unpredictable, check the charging path",
+          [
+            "A software limit is less likely when charging cuts in and out at random percentages, the cable must be held at an angle, or the phone reports an unsupported accessory. Inspect the adapter, cable and connector for visible damage. Apple recommends checking for secure connections, using a wall outlet and trying another compatible cable or charger when appropriate. Do not continue using equipment with exposed conductors, bent prongs, melting or unusual heat.",
+            "If the port appears obstructed, follow the device maker's cleaning instructions rather than inserting metal tools or liquid into it. With wireless charging, confirm that the phone is aligned on a compatible charger and remove interfering accessories according to manufacturer guidance. Restarting and checking for applicable software updates can be reasonable after basic checks; a full factory reset should not be the first diagnostic step."
+          ]
+        ],
+        [
+          "A controlled test that avoids unnecessary purchases",
+          [
+            "First, note the existing charge limit or adaptive setting and any warning. Second, use a known-good compatible charger in a cool indoor room without gaming or navigation. Third, observe whether charging reaches the selected limit, pauses with a clear message or stops unpredictably. Fourth, if you intentionally need 100%, use the manufacturer's supported temporary override or change the limit, then observe whether the phone passes the previous stopping point.",
+            "Change only one factor at a time. Swapping the cable, adapter, wireless pad and software settings simultaneously makes the cause difficult to identify. You do not need to drain a phone to zero or leave it plugged in overnight just to run this test. If charging behaves normally after changing a documented limit, you have a useful explanation without buying replacement hardware."
+          ]
+        ],
+        [
+          "Should you leave the 80% limit on?",
+          [
+            "An 80% limit trades some usable charge on a given day for less time spent at a high state of charge. It may suit someone who ends most days with substantial battery remaining or keeps the phone connected to power for long periods. If your schedule includes travel, long shifts, frequent navigation or unreliable access to outlets, the extra capacity of a full charge may matter more on those days.",
+            "There is no universal rule requiring every phone to remain between two exact percentages at all times. Follow the options for your model, avoid excessive heat, and choose a charging routine that supports your actual use. The purpose is to reduce unnecessary battery stress without making the phone less useful."
+          ]
+        ],
+        [
+          "When to contact support, and a quick decision checklist",
+          [
+            "Contact the manufacturer or an authorized repair provider if charging still fails with a compatible known-good setup, warnings persist in normal conditions, the port appears damaged, or the battery is swollen or otherwise physically abnormal. Give support the model, software version, exact warning, stopping percentage, charging method and tests already performed. This can prevent an unnecessary replacement that does not address the problem.",
+            "Stops near 80% every time? Check the configured limit. Pauses overnight but reaches 100% later? Check adaptive charging. Stops while warm or shows Charging On Hold? Let it return to normal temperature and follow the warning. Stops at random levels or reports an accessory error? Check the cable, adapter and connection. Still failing? Seek manufacturer guidance. This is an explanation of documented features, not a claim of hands-on testing."
+          ]
+        ]
+      ]
     }
   ]
 }
