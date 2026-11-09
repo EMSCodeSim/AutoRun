@@ -837,6 +837,94 @@
           ]
         ]
       ]
+    },
+    {
+      "slug": "ceiling-fan-electricity-cost",
+      "title": "How Much Electricity Does a Ceiling Fan Use? Calculate the Cost",
+      "dek": "Calculate ceiling fan electricity costs using watts, hours and your rate, and learn when fans can help lower air-conditioning bills.",
+      "category": "Energy",
+      "diagram": "energy",
+      "updated": "2026-11-09",
+      "sources": [
+        [
+          "U.S. Department of Energy — Estimating appliance energy use",
+          "https://www.energy.gov/energysaver/estimating-appliance-and-home-electronic-energy-use"
+        ],
+        [
+          "ENERGY STAR — Ceiling fans",
+          "https://www.energystar.gov/products/ceiling_fans"
+        ],
+        [
+          "ENERGY STAR — Installation and usage tips",
+          "https://www.energystar.gov/products/ceiling_fans/installation-and-usage-tips"
+        ],
+        [
+          "ENERGY STAR — Key product criteria",
+          "https://www.energystar.gov/products/ceiling_fans/key-product-criteria"
+        ],
+        [
+          "ENERGY STAR — Ceiling fan basics",
+          "https://www.energystar.gov/products/ceiling_fans/ceiling_fan_basics"
+        ]
+      ],
+      "sections": [
+        [
+          "Calculate the cost using watts and hours",
+          [
+            "A ceiling fan consumes electricity to run its motor; a built-in light may add a separate load. There is no universal fan wattage because motor design, blade size, speed and lighting differ. Find your model's published wattage at the setting you actually use. Divide watts by 1,000, multiply by hours of operation, then multiply by your electricity rate per kilowatt-hour (kWh). This estimates variable energy charges rather than the entire utility bill. The U.S. Department of Energy describes the same method for estimating household appliance energy use.",
+            "A fan rated at 50 watts, used eight hours daily for 30 days, consumes 12 kWh. At an illustrative $0.20 per kWh, that costs $2.40 for the month. These are hypothetical inputs, not a national electricity price or a claim about typical fan power. If that same fan operates continuously for 30 days, its 36 kWh would cost $7.20 at the example rate. Actual power and rates can differ substantially."
+          ]
+        ],
+        [
+          "Low, medium and high speed are not equivalent",
+          [
+            "A ceiling fan generally draws different amounts of power at different speeds, so a high-speed rating may overstate your normal consumption if you use low speed. Check manufacturer specifications or a certified product listing for speed-specific watts. ENERGY STAR model listings can identify low-speed, high-speed and standby power. The relevant figure is the motor's draw under the conditions you use, not the largest number on a box.",
+            "For mixed use, calculate each setting separately. Suppose a hypothetical fan uses 15 watts on low for six hours and 50 watts on high for two hours. Its daily use is (15 × 6 + 50 × 2) ÷ 1,000, or 0.19 kWh. Multiply by your rate for the energy cost. This approach is more defensible than assuming eight hours at maximum speed, but still depends on reliable wattage inputs."
+          ]
+        ],
+        [
+          "Include the light kit without double counting",
+          [
+            "Some fans have integrated lights, while others have separate bulbs. A fan-motor specification may exclude lighting electricity, so read the label carefully. If the motor draws 40 watts and the lamps together draw 18 watts, both operating simultaneously would use about 58 watts under those assumed conditions. If the light is off, do not include its 18 watts. If a published total already includes lighting, do not add it again.",
+            "Changing to a compatible lower-wattage lamp may reduce the lighting portion of electricity use without changing motor consumption. Compare bulb wattage and lumens, and check fixture ratings, dimmer compatibility and enclosed-fixture restrictions. Do not exceed the fixture's specified electrical or thermal limits."
+          ]
+        ],
+        [
+          "Can a fan reduce air-conditioning costs?",
+          [
+            "A ceiling fan circulates air and can make people feel cooler through airflow. It does not remove heat from the room as an air conditioner does. ENERGY STAR advises turning fans off in unoccupied rooms because fans cool people, not rooms. Running an empty-room fan typically adds electricity use without delivering a comfort benefit to anyone.",
+            "The larger potential savings come when airflow allows you to raise the air-conditioner thermostat while remaining comfortable. Whether that saves money depends on the thermostat adjustment, climate, occupancy and cooling-system efficiency. If the thermostat stays unchanged, running the fan usually adds to total electricity use. Avoid promising a fixed dollar saving without measuring the household's actual conditions."
+          ]
+        ],
+        [
+          "Compare efficiency using airflow per watt",
+          [
+            "ENERGY STAR evaluates ceiling-fan efficiency using airflow per watt, expressed as cubic feet per minute per watt (CFM/W), under defined test conditions. This is more informative than watts alone because a very low-power fan may also move little air. Compare similar fan types and their airflow, room fit, sound and controls rather than simply selecting the smallest watt number.",
+            "A certified product listing may provide low-speed and high-speed power values and other performance measurements. ENERGY STAR also publishes criteria for standard ceiling fans and low-profile hugger fans. The most efficient choice for a particular room is not necessarily the cheapest or the one with the longest blades. Room dimensions, mounting height and user comfort matter."
+          ]
+        ],
+        [
+          "Find your real usage without unsafe electrical work",
+          [
+            "Identify the exact model number, consult its manufacturer manual or ENERGY STAR listing, and record realistic daily hours for each speed. Read your utility bill for the applicable energy rate. If your plan has time-of-use prices, calculate separately for expensive and inexpensive periods. Keep the light's operating hours separate from the motor's if they differ.",
+            "Most ceiling fans are hardwired. Do not remove wiring or improvise a plug connection merely to use a household plug-in energy meter. If precise measurement of a hardwired fan is important, consult a qualified electrician. Otherwise, describe the result as an estimate based on manufacturer data, not a measured electricity bill reduction."
+          ]
+        ],
+        [
+          "Install and operate safely through the seasons",
+          [
+            "ENERGY STAR advises using a ceiling-fan-rated electrical box and following the manufacturer's mounting and clearance instructions. A box intended only for a light fixture may not support a fan's weight and movement. If wiring, mounting support or ceiling clearance is uncertain, use a qualified installer rather than attempting an improvised repair.",
+            "For summer use, ENERGY STAR recommends counterclockwise rotation that creates a downward breeze when viewed from below. In winter, low-speed clockwise rotation can produce a gentle updraft and circulate warm air near the ceiling. Confirm the actual airflow and consult your specific fan's manual, because controls differ. Turn the fan off when the room is empty."
+          ]
+        ],
+        [
+          "Decide whether replacement is worthwhile",
+          [
+            "Calculate annual energy use using your real schedule before spending money on a replacement. For example, a hypothetical 50-watt fan running eight hours every day for 365 days consumes 146 kWh. At the illustrative $0.20 rate, that is $29.20 annually in energy charges. A more efficient model could reduce that amount, but savings depend on the difference in measured wattage and actual use.",
+            "If the existing fan is reliable and comfortable, electricity savings alone may not quickly recover the cost of buying and installing another one. Noise, airflow, lighting, controls and safety can be better reasons to replace it. Use the Practical Pick electricity-cost calculator to compare scenarios, and avoid treating a manufacturer efficiency label as proof of your personal savings."
+          ]
+        ]
+      ]
     }
   ]
 }
