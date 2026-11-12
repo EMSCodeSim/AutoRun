@@ -925,6 +925,108 @@
           ]
         ]
       ]
+    },
+    {
+      "slug": "heat-pump-vs-space-heater-electricity-cost",
+      "title": "Heat Pump vs. Electric Space Heater: Which Costs Less to Run?",
+      "dek": "Compare heating electricity costs using equal delivered heat, realistic calculations and cold-weather considerations before choosing a heater.",
+      "category": "Energy",
+      "diagram": "energy",
+      "updated": "2026-11-12",
+      "sources": [
+        [
+          "DOE — Heat Pump Systems",
+          "https://www.energy.gov/energysaver/heat-pump-systems"
+        ],
+        [
+          "DOE — Heat Pump Energy Savings",
+          "https://www.energy.gov/articles/pump-your-savings-heat-pumps"
+        ],
+        [
+          "DOE — Energy Saver Guide",
+          "https://www.energy.gov/sites/prod/files/2022-08/energy-saver-guide-2022.pdf"
+        ],
+        [
+          "DOE — Residential Heat Pump Purchasing Guide",
+          "https://www.energy.gov/cmei/femp/purchasing-energy-efficient-residential-air-source-heat-pumps"
+        ],
+        [
+          "ENERGY STAR — Maintenance Checklist",
+          "https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist"
+        ]
+      ],
+      "sections": [
+        [
+          "What is cheaper for the same amount of heat?",
+          [
+            "Electric resistance heaters turn electrical energy directly into heat in the room. Heat pumps use electricity to move heat from outdoors into the home. For the same delivered heating energy, a heat pump operating with a coefficient of performance above one uses less electricity. The U.S. Department of Energy explains that modern heat pumps can substantially reduce heating electricity use compared with resistance furnaces and baseboard heating. That comparison is about equal heat delivered, not the purchase price or the total energy needed to heat different spaces.",
+            "A portable heater can still be a sensible short-term option for one occupied room, especially when heating the whole house would be unnecessary. But running it alongside unchanged central heating may increase the bill. Separate the question of appliance efficiency from the question of how much space you actually need warm."
+          ]
+        ],
+        [
+          "How the two heating methods work",
+          [
+            "A conventional plug-in space heater uses a resistive element. A 1,500-watt heater running continuously for an hour consumes 1.5 kilowatt-hours of electricity. Its thermostat may cycle off during that hour, so actual consumption can be lower. Different resistance heater shapes may distribute warmth differently, but do not magically multiply the amount of heat delivered per unit of electricity.",
+            "An air-source heat pump operates a compressor and fans to transfer heat. The coefficient of performance, abbreviated COP, is delivered heat divided by electrical energy consumed under particular conditions. A COP of three means three units of heat delivered per unit of electricity consumed. COP changes with outdoor temperature, model, airflow, and operation; it is not a fixed real-world guarantee."
+          ]
+        ],
+        [
+          "Calculate a fair example",
+          [
+            "Imagine that a room requires six kilowatt-hours of delivered heat during a period. A resistance heater would consume approximately six kWh of electricity. At a purely illustrative electricity rate of twenty cents per kWh, the energy charge would be $1.20. A heat pump operating at an assumed COP of three would need two kWh of electricity to deliver the same heat, costing $0.40 at that same illustrative rate.",
+            "At COP two, the heat pump would consume three kWh and cost $0.60. These figures are arithmetic demonstrations, not independent product tests, verified tariffs, or promises of household savings. They exclude installation, maintenance, fixed utility charges and any supplemental heat. Always compare the same delivered heat, not a space heater's nameplate watts with a heat pump's advertised maximum capacity."
+          ]
+        ],
+        [
+          "Find the real rate and running time",
+          [
+            "Start with your utility bill and find the applicable variable electricity charge per kWh. Include relevant variable delivery charges and check whether the price changes during peak hours. For resistance heating, divide watts by one thousand and multiply by the hours the heating element actually operates. A 1,500-watt heater running for two total hours consumes three kWh. At the example twenty-cent rate, that is $0.60.",
+            "If the thermostat turns the element off for half the period, assuming full power for every clock hour will overestimate usage. For heat pumps, a representative seasonal electricity record or an installer estimate that accounts for local weather is more useful than multiplying a single rated wattage by hours. Never attach consumer plug-in energy meters to permanently wired HVAC equipment."
+          ]
+        ],
+        [
+          "Cold weather, defrost and backup heat",
+          [
+            "Air-source heat pumps can extract heat from outdoor air even in cold weather. However, many models lose heating capacity and efficiency as outdoor temperatures fall. The Department of Energy notes that advances in cold-climate designs have made heat pumps practical in colder regions. That does not mean every model performs equally at freezing temperatures. Compare low-temperature capacity and efficiency for the actual model being considered.",
+            "Outdoor coils can need defrost cycles, and some systems use supplemental electric resistance strips or another backup heat source. Backup operation can change the cost comparison substantially. Ask how the system decides to use auxiliary heat and whether the thermostat is configured correctly. Long compressor run times are not necessarily a fault in variable-speed systems."
+          ]
+        ],
+        [
+          "When heating just one room changes the answer",
+          [
+            "Suppose you only need a home office warm for a few hours. A portable heater might use less total electricity than keeping a much larger building at a higher temperature, even though resistance heating is less efficient per unit of heat. That is a question about reducing the overall heating load, not about making resistance elements more efficient.",
+            "Before lowering central heating, consider other occupants, plumbing freeze protection, moisture, pets and building requirements. If the central heat pump continues supplying the same amount of heat while the space heater runs, the additional heater usually adds energy consumption. A reliable comparison requires looking at the whole household, not merely the wattage of one appliance."
+          ]
+        ],
+        [
+          "What ratings and estimates can tell you",
+          [
+            "HSPF2 is a standardized seasonal heating efficiency rating for relevant heat pumps; SEER2 describes cooling efficiency. These ratings are useful for comparing equipment tested under prescribed conditions, but they are not precise predictions of your home energy bill. The Department of Energy's federal purchasing guidance describes these ratings and shows that projected operating costs depend on region and equipment performance.",
+            "An installer should consider the home's heat loss, insulation, air leakage, duct condition, equipment sizing and local design temperatures. A ductless mini-split can serve selected zones without existing ductwork, while a ducted heat pump can condition multiple rooms. Request written model numbers, sizing assumptions and expected backup-heating behavior rather than accepting an unsupported percentage-savings claim."
+          ]
+        ],
+        [
+          "Maintenance and thermostat choices",
+          [
+            "Before buying new equipment, check filters and airflow according to manufacturer instructions. Keep the outdoor unit clear of obstructions without attempting electrical or refrigerant repairs. ENERGY STAR recommends regular maintenance and professional seasonal checkups. Poor airflow, incorrect controls and neglected equipment can undermine otherwise efficient heating.",
+            "Be careful with large thermostat setbacks on systems that use electric auxiliary heat. Some controls may call for resistance heat when rapidly recovering from a deep setback, although other modern controls are designed to manage recovery efficiently. Follow the guidance for the specific heat pump and thermostat rather than applying one universal setting to every system."
+          ]
+        ],
+        [
+          "Safety matters more than theoretical savings",
+          [
+            "Use portable heaters only according to their instructions and maintain the required distance from combustible materials. Stop using equipment with damaged cords, scorched plugs, repeated breaker trips or an unusual burning smell. Avoid improvised extension-cord arrangements. A space heater cannot safely compensate for defective household wiring.",
+            "Heat pump installation and refrigerant servicing should be performed by qualified professionals. Never defeat backup heating or safety controls to chase a lower bill. In very cold climates, make sure the home has an appropriate plan for equipment outages and freezing conditions."
+          ]
+        ],
+        [
+          "A decision checklist before spending money",
+          [
+            "For equal heat delivered, a properly operating heat pump with COP above one generally uses less electricity than electric resistance heat. For one small occupied room, the answer about total household cost depends on whether heating demand elsewhere can be reduced safely. For very cold weather, check the heat pump's low-temperature performance and supplemental heating requirements.",
+            "Write down your marginal electricity rate, rooms being heated, estimated operating hours, and an efficiency estimate supported by equipment documentation or measurements. Compare several scenarios rather than relying on one precise-looking number. Consider installation cost, maintenance and expected lifespan before deciding whether replacing equipment is financially worthwhile."
+          ]
+        ]
+      ]
     }
   ]
 }
