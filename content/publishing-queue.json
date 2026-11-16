@@ -1027,6 +1027,86 @@
           ]
         ]
       ]
+    },
+    {
+      "slug": "phone-battery-drains-overnight",
+      "title": "Why Does My Phone Battery Drain Overnight? A Step-by-Step Fix",
+      "dek": "Find why an idle iPhone, Pixel or Galaxy loses charge overnight, read battery-usage clues, and try safe fixes before replacing the battery.",
+      "category": "Charging",
+      "diagram": "battery",
+      "updated": "2026-11-16",
+      "sources": [
+        [
+          "Apple Support — iPhone or iPad battery drains too quickly",
+          "https://support.apple.com/en-euro/120745"
+        ],
+        [
+          "Google Pixel Phone Help — Get the most life from your Pixel battery",
+          "https://support.google.com/pixelphone/answer/6090612"
+        ],
+        [
+          "Samsung US Support — Galaxy battery drains faster",
+          "https://www.samsung.com/us/support/troubleshoot/TSG10013631/"
+        ]
+      ],
+      "sections": [
+        [
+          "Measure the overnight loss before troubleshooting",
+          [
+            "An idle phone still receives notifications, maintains network connections and may finish updates or synchronization. A drop in battery percentage during sleep does not automatically indicate a defective battery. The useful comparison is between nights with similar conditions on the same device, rather than an arbitrary percentage threshold that supposedly applies to every phone.",
+            "Record the percentage and time before bed, unplug the phone, then record both again before using it in the morning. Note whether the phone had poor cellular reception, recently installed updates or felt warm. Repeat when practical. Do not run a diagnostic that disables overnight emergency communications or critical alerts. Battery percentage is an estimate of remaining charge, not a direct measurement of the energy consumed."
+          ]
+        ],
+        [
+          "Find the overnight activity in battery settings",
+          [
+            "On an iPhone, open Settings and Battery, then examine usage for the relevant hours. Apple's support documentation explains background activity, notifications, low signal and system activity. The exact layout varies by iOS version. Check whether the phone reports an ongoing update or setup process before blaming a specific app.",
+            "On Pixel, use Settings, Battery, Battery usage to inspect apps and system activity. Google generally recommends leaving app battery optimization enabled. On Galaxy, use Settings and Battery to examine the graph and app usage, then review supported Device care options. Android menu names vary by model and version. An app's large share of total consumption is not proof of a malfunction; investigate the timing and what the app was doing."
+          ]
+        ],
+        [
+          "Allow recent setup and software updates to settle",
+          [
+            "A newly configured phone or one that just received a major software update may perform extra work in the background. Apple describes ongoing device setup and iOS updates as temporary causes of increased battery use. Samsung says battery consumption can rise during the first days of device optimization. Google notes that Pixel adaptive behavior learns usage over time.",
+            "If the issue began after an update, check for completion notices, install trusted app updates and observe whether the pattern improves over the following days. Do not assume every unexplained battery drop is harmless or temporary. Persistent overheating, repeated crashes or unusually rapid losses still require investigation. Avoid factory resetting a phone simply because its battery usage changed immediately after an update."
+          ]
+        ],
+        [
+          "Check signal strength where the phone sleeps",
+          [
+            "Poor cellular coverage can increase battery consumption as a phone searches for or maintains a connection. Apple identifies low or absent mobile coverage as a potential battery-use factor, and Samsung similarly warns that unstable network conditions can increase drain. A basement bedroom, remote building or shielded room can produce different results from a desk near a window.",
+            "Check the phone's cellular signal at the actual bedside location. If reliable Wi-Fi is available, connect and compare similar nights. Airplane mode can be a useful controlled experiment only when calls, messages and network-based alerts are not needed. Do not recommend it as an automatic overnight fix to someone who relies on emergency contact, security notifications or other critical connectivity."
+          ]
+        ],
+        [
+          "Fix a suspected background app one at a time",
+          [
+            "If an app repeatedly appears active during sleep, check whether it is uploading photos, tracking location, playing media, refreshing content or delivering frequent notifications. Update it, inspect its own settings and restart the phone before considering removal. On Pixel, Google recommends keeping most apps optimized rather than broadly disabling background operation.",
+            "Samsung offers Sleeping and Deep sleeping app modes, but cautions that they can delay notifications or prevent background activity. Restrict only nonessential apps and compare the next night. Do not silence messaging, emergency, health-monitoring or security applications without understanding the consequences. Unverified battery-cleaner apps are not a substitute for the phone's own usage information."
+          ]
+        ],
+        [
+          "Use battery-saving settings deliberately",
+          [
+            "Apple's Low Power Mode reduces selected background and visual activity. Pixel offers Battery Saver and Adaptive Battery. Galaxy Power saving can restrict background data and some higher-power features. These tools can extend runtime, but they may also affect notifications, refresh intervals or performance. Follow the device's own description of each option rather than expecting identical behavior across brands.",
+            "For a diagnostic comparison, try a power-saving mode for one night only if its restrictions are acceptable. An improvement suggests that controllable activity matters, but does not identify a particular app or prove that the battery is healthy. Restore settings required for time-sensitive notifications afterward. Avoid simultaneously changing many settings because it becomes impossible to tell which adjustment helped."
+          ]
+        ],
+        [
+          "Recognize aging batteries and warning signs",
+          [
+            "Rechargeable lithium-ion batteries lose usable capacity with age and use. That means the same overnight energy demand can consume a larger fraction of an older battery's remaining charge. Apple's battery health settings may show reduced maximum capacity or a service recommendation, depending on iPhone model. Samsung lists fast drain after charging and unexpected shutdowns as possible signs of battery aging.",
+            "Unusual heat while idle, swelling, leakage, damage, smoke or an abnormal smell changes the priority from optimization to safety. Stop using or charging damaged equipment and follow the manufacturer's service instructions. Do not puncture or open a battery, put a hot phone in a freezer, or leave a damaged phone charging under bedding. For persistent rapid drain with shutdowns or service warnings, seek qualified device support."
+          ]
+        ],
+        [
+          "Run a simple two-night comparison before spending money",
+          [
+            "On the first night, collect the start and end percentages, time interval, network conditions and battery-usage chart. Identify the strongest clue: recent update, poor signal, unusually active app or evidence of battery wear. Do not treat a single percentage as a universal normal-or-faulty test. The goal is to narrow the possibilities using information already available on the device.",
+            "Before the second night, make one low-risk change, such as updating a nonessential app, improving reception or allowing setup tasks to finish. Keep the other conditions similar. If the result improves, continue observing before buying accessories or paying for service. If the loss remains substantial, the phone overheats or it shuts down unexpectedly, consult the manufacturer. Back up important data before any manufacturer-recommended reset; a reset can erase information and does not repair faulty hardware."
+          ]
+        ]
+      ]
     }
   ]
 }
